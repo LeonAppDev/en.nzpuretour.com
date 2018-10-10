@@ -1,0 +1,425 @@
+// ------------------------------------------
+// bi app mixins
+// author:
+// twitter.com/anasnakawa
+// inspired by:
+// twitter.com/victorzamfir
+// licensed under the MIT license 
+// http://www.opensource.org/licenses/mit-license.php
+// ------------------------------------------
+
+// ------------------------------------------
+// Table of contents
+// ------------------------------------------
+// general
+// padding
+// margin
+// float
+// text align
+// clear
+// left / right
+// border
+//  - width
+//  - style
+//  - color
+//  - generic
+//  - radius
+// transform
+//  - translate
+//  - rotate
+// custom
+// ------------------------------------------
+
+// genarel
+// ------------------------------------------
+.mix-direction-change(@direction:ltr){}
+.mix-direction-change(@direction:ltr) when (@direction = rtl){
+	direction:rtl;
+	unicode-bidi:embed;
+}
+
+// padding
+// ------------------------------------------
+.padding-left(@distance) when (@bi-app-left = left){
+	padding-left:@distance;
+}
+
+.padding-left(@distance) when (@bi-app-left = right){
+	padding-right:@distance;
+}
+
+.padding-right(@distance) when (@bi-app-right = right){
+	padding-right:@distance;
+}
+
+.padding-right(@distance) when (@bi-app-right = left){
+	padding-left:@distance;
+}
+
+.padding(@top, @right, @bottom, @left) when (@bi-app-left = left){
+	padding:@top @right @bottom @left;
+}
+
+.padding(@top, @right, @bottom, @left, @is_important:no) when (@bi-app-left = left) and (@is_important = yes){
+	padding:@top @right @bottom @left !important;
+}
+
+.padding(@top, @right, @bottom, @left) when (@bi-app-left = right){
+	padding:@top @left @bottom @right;
+}
+
+.padding(@top, @right, @bottom, @left, @is_important:no) when (@bi-app-left = right) and (@is_important = yes){
+	padding:@top @left @bottom @right !important;
+}
+
+// margin
+// ------------------------------------------
+.margin-left(@distance) when (@bi-app-left = left){
+	margin-left:@distance;
+}
+
+.margin-left(@distance) when (@bi-app-left = right){
+	margin-right:@distance;
+}
+
+.margin-right(@distance) when (@bi-app-right = right){
+	margin-right:@distance;
+}
+
+.margin-right(@distance) when (@bi-app-right = left){
+	margin-left:@distance;
+}
+
+.margin(@top, @right, @bottom, @left) when (@bi-app-left = left){
+	margin:@top @right @bottom @left;
+}
+
+.margin(@top, @right, @bottom, @left, @is_important:no) when (@bi-app-left = left) and (@is_important = yes){
+	margin:@top @right @bottom @left !important;
+}
+
+.margin(@top, @right, @bottom, @left) when (@bi-app-left = right){
+	margin:@top @left @bottom @right;
+}
+
+.margin(@top, @right, @bottom, @left, @is_important:no) when (@bi-app-left = right) and (@is_important = yes){
+	margin:@top @left @bottom @right !important;
+}
+
+// float
+// ------------------------------------------
+.bi-app-float-left(){
+	float:@bi-app-left;
+}
+
+.bi-app-float-right(){
+	float:@bi-app-right;
+}
+
+.float(@direction) when (@direction = left){
+	.bi-app-float-left();
+}
+
+.float(@direction, @important:no) when (@direction = left) and (@important = yes){
+	.bi-app-float-left() !important;
+}
+
+.float(@direction) when (@direction = right){
+	.bi-app-float-right();
+}
+
+.float(@direction, @important:no) when (@direction = right) and (@important = yes){
+	.bi-app-float-right() !important;
+}
+
+// text-align
+// ------------------------------------------
+.bi-app-text-align-left(){
+	text-align:@bi-app-left;
+}
+
+.bi-app-text-align-right(){
+	text-align:@bi-app-right;
+}
+
+.text-align(@direction) when (@direction = left){
+	.bi-app-text-align-left;
+}
+
+.text-align(@direction) when (@direction = right){
+	.bi-app-text-align-right;
+}
+
+// clear
+// ------------------------------------------
+.bi-app-clear-left(){
+	clear:@bi-app-left;
+}
+
+.bi-app-clear-right(){
+	clear:@bi-app-right;
+}
+
+.clear(@direction) when (@direction = left){
+	.bi-app-clear-left;
+}
+
+.clear(@direction) when (@direction = right){
+	.bi-app-clear-right;
+}
+
+// left / right
+// ------------------------------------------
+.left(@distance) when (@bi-app-left = left){
+	left:@distance;
+}
+
+.left(@distance) when (@bi-app-left = right){
+	right:@distance;
+}
+
+.right(@distance) when (@bi-app-right = right){
+	right:@distance;
+}
+
+.right(@distance) when (@bi-app-right = left){
+	left:@distance;
+}
+
+.left-reset(@important:no){}
+
+.left-reset(@important:no) when (@bi-app-left = right){
+	left:auto;
+}
+
+.left-reset(@important:no) when (@bi-app-left = right) and (@important = yes){
+	left:auto !important;
+}
+
+.right-reset(@important:no){}
+
+.right-reset(@important:no) when (@bi-app-right = left){
+	right:auto;
+}
+
+.right-reset(@important:no) when (@bi-app-right = left) and (@important = yes){
+	right:auto !important;
+}
+
+// border
+// ------------------------------------------
+
+// width
+.border-left-width(@width) when (@bi-app-left = left){
+	border-left-width:@width;
+}
+
+.border-left-width(@width) when (@bi-app-left = right){
+	border-right-width:@width;
+}
+
+.border-right-width(@width) when (@bi-app-right = right){
+	border-right-width:@width;
+}
+
+.border-right-width(@width) when (@bi-app-right = left){
+	border-left-width:@width;
+}
+
+.border-width(@top, @right, @bottom, @left) when (@bi-app-left = left){
+	border-width:@top @right @bottom @left;
+}
+
+.border-width(@top, @right, @bottom, @left) when (@bi-app-left = right){
+	border-width:@top @left @bottom @right;
+}
+
+// style
+.border-left-style(@style) when (@bi-app-left = left){
+	border-left-style:@style;
+}
+
+.border-left-style(@style) when (@bi-app-left = right){
+	border-right-style:@style;
+}
+
+.border-right-style(@style) when (@bi-app-right = right){
+	border-right-style:@style;
+}
+
+.border-right-style(@style) when (@bi-app-right = left){
+	border-left-style:@style;
+}
+
+.border-style(@top, @right, @bottom, @left) when (@bi-app-left = left){
+	border-style:@top @right @bottom @left;
+}
+
+.border-style(@top, @right, @bottom, @left) when (@bi-app-left = right){
+	border-style:@top @left @bottom @right;
+}
+
+// color
+.border-left-color(@color) when (@bi-app-left = left){
+	border-left-color:@color;
+}
+
+.border-left-color(@color) when (@bi-app-left = right){
+	border-right-color:@color;
+}
+
+.border-right-color(@color) when (@bi-app-right = right){
+	border-right-color:@color;
+}
+
+.border-right-color(@color) when (@bi-app-right = left){
+	border-left-color:@color;
+}
+
+.border-color(@top, @right, @bottom, @left) when (@bi-app-left = left){
+	border-color:@top @right @bottom @left;
+}
+
+.border-color(@top, @right, @bottom, @left) when (@bi-app-left = right){
+	border-color:@top @left @bottom @right;
+}
+
+// generic border
+.border-left(@border) when (@bi-app-left = left){
+	border-left:@border;
+}
+
+.border-left(@border) when (@bi-app-left = right){
+	border-right:@border;
+}
+
+.border-right(@border) when (@bi-app-right = right){
+	border-right:@border;
+}
+
+.border-right(@border) when (@bi-app-right = left){
+	border-left:@border;
+}
+
+// radius
+.border-top-left-radius(@radius) when (@bi-app-left = left){
+	-webkit-border-top-left-radius:@radius;
+	border-top-left-radius:@radius;
+}
+
+.border-top-left-radius(@radius) when (@bi-app-left = right){
+	-webkit-border-top-right-radius:@radius;
+	border-top-right-radius:@radius;
+}
+
+.border-top-right-radius(@radius) when (@bi-app-right = right){
+	-webkit-border-top-right-radius:@radius;
+	border-top-right-radius:@radius;
+}
+
+.border-top-right-radius(@radius) when (@bi-app-right = left){
+	-webkit-border-top-left-radius:@radius;
+	border-top-left-radius:@radius;
+}
+
+.border-bottom-left-radius(@radius) when (@bi-app-left = left){
+	-webkit-border-bottom-left-radius:@radius;
+	border-bottom-left-radius:@radius;
+}
+
+.border-bottom-left-radius(@radius) when (@bi-app-left = right){
+	-webkit-border-bottom-right-radius:@radius;
+	border-bottom-right-radius:@radius;
+}
+
+.border-bottom-right-radius(@radius) when (@bi-app-right = right){
+	-webkit-border-bottom-right-radius:@radius;
+	border-bottom-right-radius:@radius;
+}
+
+.border-bottom-right-radius(@radius) when (@bi-app-right = left){
+	-webkit-border-bottom-left-radius:@radius;
+	border-bottom-left-radius:@radius;
+}
+
+.border-right-radius(@radius){
+	.border-top-right-radius(@radius);
+	.border-bottom-right-radius(@radius);
+}
+
+.border-left-radius(@radius){
+	.border-top-left-radius(@radius);
+	.border-bottom-left-radius(@radius);
+}
+
+.border-top-radius(@radius){
+	.border-top-left-radius(@radius);
+	.border-top-right-radius(@radius);
+}
+
+.border-bottom-radius(@radius){
+	.border-bottom-left-radius(@radius);
+	.border-bottom-right-radius(@radius);
+}
+
+.border-radius(@topLeft, @topRight:null, @bottomRight:null, @bottomLeft:null) when (@topRight = null){
+	-webkit-border-radius:@topLeft;
+	border-radius:@topLeft;
+}
+
+.border-radius(@topLeft, @topRight:null, @bottomRight:null, @bottomLeft:null) when not (@topRight = null){
+	.border-top-left-radius(@topLeft);
+	.border-top-right-radius(@topRight);
+	.border-bottom-right-radius(@bottomRight);
+	.border-bottom-left-radius(@bottomLeft);
+}
+
+// transform
+// ------------------------------------------
+.bi-app-transform(@transform){
+	-moz-transform:@transform; /* For Firefox */
+	-ms-transform:@transform; /* For IE */
+	-webkit-transform:@transform;/* For Safari, Chrome, iOS */
+	-o-transform:@transform; /* For Opera */
+	transform:@transform;
+}
+
+// translate
+.translate(@x, @y) when(@bi-app-left = left){
+	.bi-app-transform(translate(@x, @y));
+}
+
+.translate(@x, @y) when(@bi-app-left = right){
+	.bi-app-transform(translate(@x * -1, @y));
+}
+
+// rotate
+.rotate(@x) when(@bi-app-left = left){
+	.bi-app-transform(rotate(@x));
+}
+
+.rotate(@x) when(@bi-app-left = right){
+	.bi-app-transform(rotate(@x * -1));
+}
+
+// custom
+// ------------------------------------------
+.mix-rtl-mobile-menu-change-position-arrow(){}
+.mix-rtl-mobile-menu-change-position-arrow() when (@bi-app-left = right){
+	a{
+		float:right;
+	}
+}
+
+.mix-rtl-include-font-awesome-overwrite(){}
+.mix-rtl-include-font-awesome-overwrite() when (@bi-app-left = right){
+	@import "rtl/font-awesome-overwrite.less";
+}
+
+.mix-rtl-select2-arrow(){}
+.mix-rtl-select2-arrow() when (@bi-app-left = right){
+	.select2-arrow b:after{
+		margin-right:-7px;
+		margin-left:0;
+	}
+}

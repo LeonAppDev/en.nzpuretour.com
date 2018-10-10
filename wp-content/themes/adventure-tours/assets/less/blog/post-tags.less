@@ -1,0 +1,32 @@
+.post-tags{
+	span{
+		.margin-right(15px);
+		font-family:@subheading-font-family;
+		font-size:1.200em;
+
+		i{
+			.margin-right(10px);
+			color:@main-color1;
+		}
+	}
+
+	a{
+		display:inline-block;
+		height:30px;
+		line-height:30px;
+		.margin(0, 5px, 10px, 0);
+		padding:0 15px;
+		color:@main-text-color;
+		font-family:@subheading-font-family;
+		font-size:0.933em;
+		background:#f1f1f1;
+		border-radius:@main-border-radius;
+		.mix-transition();
+		border-bottom:none;
+
+		&:hover{
+			text-decoration:none;
+			background:#ebebeb;
+		}
+	}
+}

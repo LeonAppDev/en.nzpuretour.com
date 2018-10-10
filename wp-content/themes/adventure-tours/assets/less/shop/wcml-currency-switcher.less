@@ -1,0 +1,167 @@
+.product-box--page-single{
+	.bootstrap-select{
+		&.wcml_currency_switcher{
+			width:230px !important;
+			.mix-margin-bottom();
+
+			a{
+				border-bottom:none;
+			}
+		}
+	}
+
+	ul{
+		&.wcml_currency_switcher{
+			width:100%;
+			display:block;
+			.mix-margin-bottom(yes);
+
+			&.curr_list_vertical{
+				li{
+					display:block;
+
+					&:after{
+						display:none;
+					}
+				}
+			}
+		}
+	}
+}
+
+ul{
+	&.wcml_currency_switcher{
+		&.curr_list_vertical,
+		&.curr_list_horizontal{
+			border-top:none;
+
+			li{
+				display:inline-block;
+				margin:0;
+				padding:0;
+				float:none;
+				border:none;
+				.mix-transition();
+				
+				&:before{
+					display:none;
+				}
+
+				&:after{
+					content:" | ";
+					display:inline-block;
+					margin:0 5px;
+				}
+
+				&:hover{
+					color:@links-color;
+				}
+
+				&:last-child{
+					.margin-right(0);
+
+					&:after{
+						display:none;
+					}
+				}
+
+				&.wcml-active-currency{
+					background:none;
+					.mix-alternative-text();
+				}
+			}
+		}
+	}
+}
+
+.widget{
+	ul{
+		&.wcml_currency_switcher{
+			width:100%;
+
+			&.curr_list_vertical{
+				border-top:none;
+
+				li{
+					display:block;
+					margin:0 0 10px;
+					padding:0 0 10px;
+					border:none;
+					border-bottom:@widget-sidebar-item-delimiter;
+					.mix-transition();
+
+					&:hover{
+						color:@links-color;
+					}
+
+					&:before{
+						display:none;
+					}
+					
+					&:after{
+						display:none;
+					}
+
+					&:last-child{
+						margin:0;
+						padding:0;
+						border-bottom:none;
+					}
+
+					&.wcml-active-currency{
+						.mix-alternative-text();
+						background:none;
+					}
+				}
+			}
+
+			&.curr_list_horizontal{
+				li{
+					margin:0;
+					padding:0;
+					float:none;
+				}
+			}
+		}
+	}
+}
+
+.footer{
+	.widget{
+		ul{
+			&.wcml_currency_switcher{
+				&.curr_list_vertical{
+					li{
+						position:relative;
+						border-bottom:none;
+						color:@footer-links-color;
+
+						&:before{
+							.mix-widget-footer-item-delimiter();
+						}
+
+						&:last-child{
+							&:before{
+								display:none;
+							}
+						}
+
+						&:hover{
+							color:@footer-links-color;
+						}
+					}
+				}
+				
+				&.curr_list_horizontal{
+					li{
+						color:@footer-links-color;
+	
+						&:hover{
+							color:@footer-links-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}

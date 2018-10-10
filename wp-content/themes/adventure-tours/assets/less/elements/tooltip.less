@@ -1,0 +1,33 @@
+.form-validation-item + .tooltip{
+	font-family:@main-font-family;
+	font-size:0.933em;
+	line-height:normal;
+	.left(0 !important);
+
+	& > .tooltip-inner{
+		width:200px;
+		padding:7px 15px;
+		color:@main-color-white;
+		background:@warning-color !important;
+		border-radius:30px;
+	}
+
+	&.in{
+		opacity:1;
+	}
+
+	&.top{
+		margin:10px 0 0;
+		padding:0;
+
+		.tooltip{
+			&-arrow{
+				margin:0;
+				border-top-color:@warning-color !important;
+				border-width:10px 6px 0;
+				.left(22px !important);
+				bottom:-9px;
+			}
+		}
+	}
+}

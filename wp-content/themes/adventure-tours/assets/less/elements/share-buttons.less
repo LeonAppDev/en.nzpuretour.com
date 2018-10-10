@@ -1,0 +1,144 @@
+.share-buttons{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	border-top:@__social-icons-border;
+
+	&__item{
+		display:table-cell;
+		.border-right(@__social-icons-border);
+
+		&:last-child{
+			.border-right(none);
+		}
+
+		.box{
+			display:block;
+			width:100%;
+			height:60px;
+			position:relative;
+
+			a{
+				display:block;
+				width:100%;
+				height:100%;
+				position:absolute;
+				top:0;
+				.left(0);
+				color:#d2d2d2;
+				font-family:FontAwesome;
+				border-bottom:none;
+				.mix-transition();
+
+				&:before{
+					display:block;
+					position:absolute;
+					top:50%;
+					.left(50%);
+					.translate(-50%, -50%);
+					font-size:1.600em;
+				}
+
+				&:hover{
+					color:@main-color1;
+				}
+			}
+		}
+
+		&--googleplus{
+			a{
+				&:hover{
+					color:#dd4b39 !important;
+				}
+
+				&:before{
+					content:"\f0d5";
+				}
+			}
+		}
+
+		&--facebook{
+			a{
+				&:hover{
+					color:#3b579d !important;
+				}
+
+				&:before{
+					content:"\f09a";
+				}
+			}
+		}
+
+		&--twitter{
+			a{
+				&:hover{
+					color:#5ea9dd !important;
+				}
+
+				&:before{
+					content:"\f099";
+				}
+			}
+		}
+
+		&--delicious{
+			a{
+				&:hover{
+					color:#3399ff !important;
+				}
+
+				&:before{
+					content:"\f1a5";
+				}
+			}
+		}
+
+		&--stumbleupon{
+			a{
+				&:hover{
+					color:#ea4b24 !important;
+				}
+
+				&:before{
+					content:"\f1a4";
+				}
+			}
+		}
+
+		&--linkedin{
+			a{
+				&:hover{
+					color:#0e76a8 !important;
+				}
+
+				&:before{
+					content:"\f0e1";
+				}
+			}
+		}
+
+		&--pinterest{
+			a{
+				&:hover{
+					color:#bd081c !important;
+				}
+
+				&:before{
+					content:"\f0d2";
+				}
+			}
+		}
+
+		&--vk{
+			a{
+				&:hover{
+					color:#597da3 !important;
+				}
+
+				&:before{
+					content:"\f189";
+				}
+			}
+		}
+	}
+}

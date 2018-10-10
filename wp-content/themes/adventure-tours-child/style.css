@@ -1,0 +1,2590 @@
+/*
+	Theme Name: Adventure Tours Child
+	Theme URI: http://themeforest.net/user/themedelight/portfolio
+	Description: Adventure Tours child theme
+	Template: adventure-tours
+	Version: 1.0.0
+*/
+img#fsb_image {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Demi';
+  src: url('fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),  url('fonts/AvenirNextLTPro-Demi.otf')  format('opentype'),
+      url('fonts/AvenirNextLTPro-Demi.woff') format('woff'), url('fonts/AvenirNextLTPro-Demi.ttf')  format('truetype'), url('fonts/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* CSS Document */
+
+
+html, body, aside, { display:block;}
+
+
+/*-------------------------------------------Short Break Page CSS--------------------------------*/
+
+
+.top-section {
+	background-image: url(images/top-img.png);
+	width: 100%;
+	height: 730px;
+	display: block;
+	background-repeat: no-repeat;
+	padding: 60px 20px;
+	background-size: cover;
+}
+
+.short-break-page {
+	width: 100%;
+	margin: 0 auto;
+/*	position: relative;
+	height: 100%;
+	overflow: hidden;*/
+	 font-family: 'AvenirNextLTPro-Demi';sss
+
+}
+.camping {
+	width: 83%;
+}
+.title-block {
+	float: right;
+}
+.form .wpcf7-submit {
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
+  padding: 2px 20px;
+  text-transform: uppercase;
+}
+
+.top-content {
+	float: left;
+	width: 68%;
+	background: rgba(255,255,255,0.6);
+	padding: 15px 25px;
+	margin-top: 18%;
+	margin-left: 25px;
+}
+.form textarea {
+  border: 3px solid rgb(243, 208, 101);
+ height: 100px;
+ }
+.form-block-main .wpcf7-list-item {
+ display: inline-block;
+ margin: 0 0 0 1em;
+ width: 50%;
+ text-align: left;
+}
+.top-content pre, .top-content p {
+	margin-bottom: 0px;
+}
+.break-content {
+	width: 100%;
+	float: left;
+	background: #fff;
+	position: relative;
+	overflow: visible;
+}
+.img-block, .img-block-mobile {
+	position: absolute;
+	right: 0px;
+	top: -35px;
+}
+
+.img-block-mobile{ display:none;}
+.content-block {
+	margin: 20px 20px 0 80px;
+	width: 75%;
+	border-left: 3px solid #f3d065;
+	float: left;
+}
+.content-block-div p {
+	line-height: 20px;
+}
+.image-section img {
+	width: 100%;
+}
+.content-block-div {
+	margin-top: -28px;
+}
+.block1 p {
+	width: 80%;
+}
+.content-block a {
+	color: #000000;
+}
+.block1, .block2 {
+	padding: 20px 40px;
+	margin-bottom: 27px;
+}
+.block1 p a, .block2 p a {
+	padding: 5px 10px;
+}
+.block-title {
+	background: url(images/heading-bg.png) no-repeat;
+	padding: 10px 20px;
+	height: 50px;
+	font-size: 28px;
+	margin-left: -32px;
+	margin-bottom: -5px;
+	font-weight: 600;
+}
+.content-block-div p {
+	line-height: 20px;
+}
+.content-block-div h6 {
+	padding: 10px 30px;
+	margin: 0px;
+	font-size: 14px;
+}
+.content-block-form {
+	margin: 25px 20px -40px 80px;
+	width: 90%;
+	border-left: 3px solid #f3d065;
+	float: left;
+}
+.section-half {
+	width: 48%;
+	float: left;
+	margin: 0 1%;
+}
+.section-half h3 {
+	padding: 0;
+	margin: 18px 0;
+	font-size: 22px;
+	font-family: 'AvenirNextLTPro-Demi';
+	font-weight: normal;
+	position: relative;
+}
+.section-half h3::before {
+	/* background-image: url("images/dot.png"); */
+	width: 10px;
+	height: 10px;
+	content: "";
+	display: block;
+	top: 8px;
+	position: absolute;
+	background: #f3d065;
+	border-radius: 50%;
+	left: -20px;
+}
+.tour-list {
+	width: 90%;
+	height: 250px;
+}
+.form-block-main {
+	width: 55%;
+ margin: 0 auto;
+ padding-bottom: 40px;
+}
+.col-md-12.content {
+	width: 100%;
+	float: left;
+	padding: 12px 30px;
+	margin-bottom: 50px;
+}
+.image-section {
+	margin-top: 0px;
+	float: left;
+	width: 99.2%;
+}
+.form-block-main ul {
+	width: 70%;
+	margin: 0 auto;
+}
+.form-block-main p {
+	text-align: center;
+	margin: 20px auto;
+}
+.form-block-main span {
+	text-transform: uppercase;
+	font-size: 13px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"]{
+	border-bottom: 3px solid #f3d065 !important;
+	box-shadow: none;
+	background: transparent;
+	border: none;
+	width: 100%;
+	height: 30px;
+	color: #333;
+	padding: 5px;
+}
+
+.wpcf7-form-control-wrap, .form {
+	width: 50%;
+	margin: 0 auto;
+}
+button {
+	float: right;
+	margin: 15px 0;
+	background: transparent;
+	border: none;
+	font-weight: 600;
+}
+.footer-img img {
+	width: 100%;
+	height: 630px;
+}
+.footer-img {
+	width: 100%;
+	float: left;
+	height: 630px;
+	padding-bottom: 30px;
+}
+.form br {
+	/* line-height: 0; */
+	/* margin: 0; */
+	/* padding: 0; */
+	display: none;
+}
+
+/*-------------------------------------------Couple CSS--------------------------------*/
+.postid-3629 .padding-all {
+  padding: 0;
+}
+.couple-page, .easy-cycling-tour {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'AvenirNextLTPro-Demi';
+
+}
+.program-table, .program-table td {
+ border: 0;
+}
+.top-section-couple {
+	background: #fceaee;
+	padding: 20px 0 0 30px;
+	float: left;
+}
+.top-left h4 {
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.family-gatway {
+	margin-top: 36px;
+}
+.page-heading {
+	background-image: url(images/gold-texture.png);
+	background-repeat: no-repeat;
+	height: 74px;
+	font-size: 40px;
+	padding: 15px 25px;
+}
+.top-left {
+	float: left;
+	width: 65%;
+	margin-top: 20px;
+}
+.page-id-5238 .page-heading {
+  display: inline-block;
+  width: 100%;
+}
+.waikitm img {
+	padding: 30px 0;
+	height: 500px;
+	width: 680px;
+}
+.waikitm p {
+	padding: 120px 0 !important;
+}
+.waikato-cont p {
+	/* width: 100%; */
+	/* display: inline-block; */
+	padding-right: 0 !important;
+}
+.waikato-cont .wpcf7-list-item {
+	padding-bottom: 9px;
+}
+.waikato-cont .wpcf7-form-control-wrap.send_c {
+	padding: 16px 0 !important;
+	display: inline-block;
+	width: 100%;
+}
+.waikato-cont .wpcf7-list-item {
+	padding-bottom: 9px;
+}
+.top-right {
+	float: right;
+	width: 35%;
+	overflow: hidden;
+	margin-top: 20px;
+}
+ul.points {
+	font-size: 16px;
+	padding-left: 15px;
+	margin-top: 0px;
+}
+ul.points li{ list-style-image:url(images/dot.png);}
+.break {
+	width: 90%;
+	float: right;
+	border-top: 3px solid #f3d065;
+	height: 15px;
+}
+.top-section-couple p {
+	width: 100%;
+	float: left;
+	padding-top: 2px;
+	font-size: 16px;
+	padding-right: 0px;
+	line-height: 28px;
+	padding-right: 20px;
+}
+.section-2 {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	float: left;
+	display: block;
+	height: 100%;
+	font-size: 16px;
+	line-height: 22px;
+}
+.section-2-inner {
+	border-left: 3px solid #f3d065;
+	height: 100%;
+	width: 98%;
+	float: right;
+	margin-left: 1px;
+	/*Add by Leon*/
+	padding-bottom: 8px;
+	/*Add by Leon*/
+}
+.section-2::before {
+	background: url(images/left-img.png) no-repeat;
+	content: "";
+	height: 612px;
+	width: 98%;
+	left: -4px;
+	position: absolute;
+	float: right;
+	margin-left: 15px;
+}
+.section-2-inner .p1 {
+	width: 100%;
+	float: right;
+	text-align: center;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-left: 55%;
+}
+.section-2-inner .p2 {
+	width: 100%;
+	padding-left: 44%;
+	padding-top: 23px;
+	float: left;
+	padding-right: 30px;
+}
+.p2 ul {
+	padding: 0;
+}
+.p4 {
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 10%;
+	margin-top: 20px;
+	float: left;
+	margin-bottom: 45px;
+}
+.p-img {
+	float: right;
+	padding-right: 20px;
+	margin-top: -30px;
+	height: 70px;
+	width: 100%;
+	text-align: right;
+}
+.p-img img {
+	height: 65px;
+}
+.p3 {
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 20px;
+}
+.p4 {
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 10%;
+	margin-top: 20px;
+	float: left;
+	margin-bottom: 45px;
+}
+.full-img {
+	background: url(images/imag.png) no-repeat;
+	height: 115px;
+	width: 100%;
+	float: left;
+	background-size: cover;
+}
+.program-section-details {
+	background: #fceaee;
+	width: 98%;
+	float: left;
+	padding: 10px 10px 20px 25px;
+	border-left: 3px solid #f3d065;
+	float: right;
+	margin-top: -12px;
+}
+.family-gatway1 {
+	/* margin-bottom: 35px; */
+	display: inline-block;
+	padding-bottom: 25px;
+}
+.family-gatway1 h2 {
+	margin-top: 0px;
+}
+.family-gatway-img {
+	float: right;
+	}
+.family-gatway-img img {
+	float: right;
+}
+.family-gatway-img h6 {
+	text-align: center;
+}
+.program-section {
+	background: #fff;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.border-left {
+	border-left: 3px solid #f3d065;
+	height: 100px;
+	margin-left: 80px;
+	width: 20px;
+}
+.p-heading {
+	width: 20px;
+	font-size: 30px;
+	word-break: break-all;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 30px;
+	position: absolute;
+	left: 6px;
+	top: 8%;
+	z-index: 999;
+	text-align: center;
+}
+.p-heading div {
+	margin-top: 30px;
+}
+.program-table {
+	width: 100%;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+.other-details h3 {
+	margin-bottom: 10px;
+}
+.col-span-2 {
+	width: 50%;
+	margin: 0;
+	float: left;
+}
+.cell-full {
+	background-image: url(images/cell-full.png);
+	height: 45px;
+	width: 100%;
+	display: block;
+	background-repeat: no-repeat;
+	margin: 6px 0 15px;
+	padding: 10px;
+}
+.cell-half {
+	background-image: url(images/half-cell.png);
+	height: 45px;
+	width: 100%;
+	display: block;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+.width-40 {
+	width: 40%;
+	float: left;
+	text-align: center;
+}
+.width-60{ width:60%; float:left;}
+.cell-60 {
+	background-image: url(images/width-60.png);
+	height: 45px;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding: 10px;
+	display: block;
+}
+.PL-20{ padding-left:20px;}
+.PR-20{ padding-right:20px;}
+.BL-3{ border-left:3px solid #f3d065;}
+p.text-right {
+	text-align: right;
+}
+.section-3 {
+	background: #fff url(images/bg-img3.png) no-repeat;
+	height: 636px;
+	width: 100%;
+	float: left;
+}
+.section-3-frisbee{
+	background: url(https://en.nzpuretour.com/wp-content/uploads/2018/03/frisbee1.png) no-repeat !important;
+	background-size:cover !important;
+
+}
+.overlay-section {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.75);
+    color: #000;
+    line-height: 1.6;
+}
+.head-logo {
+	margin-left: -25px;
+	position: absolute;
+	margin-top: 67px;
+	width: 45%;
+}
+.head-logo img {
+	height: 310px;
+	width: 98%;
+}
+.other-details p {
+	line-height: 24px;
+}
+.content-inner {
+	margin-left: 16px;
+	padding-left: 20px;
+	border-left: 3px solid #f3d065;
+	width: 60%;
+	padding-top: 20px;
+	font-size: 15px;
+	line-height: 22px;
+	height: 98.5%;
+}
+.last-section {
+	background: #fff;
+	position: relative;
+	width: 100%;
+	float: left;
+}
+.heading-last {
+	width: 70%;
+	background: #fff;
+	margin-left: 50px;
+	margin-top: -35px;
+	padding: 15px;
+}
+.heading-last h1 {
+	background: #fceaee;
+	padding: 10px;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+.review-part {
+	width: 66%;
+	float: right;
+	clear: both;
+	padding-right: 30px;
+	padding-bottom: 25px;
+}
+.review-part p {
+	font-size: 16px;
+	line-height: 22px;
+}
+.review-box {
+	width: 70%;
+	font-size: 17px;
+	overflow: hidden;
+	text-align: right;
+	font-size: 18px;
+	margin-bottom: 12px;
+	color: #fe989d;
+
+}
+.section-bottom {
+	background: #000;
+	width: 100%;
+	float: left;
+	padding-right: 30px;
+	position: relative;
+	height: 160px;
+}
+.review2 {
+	float: left;
+	width: 90%;
+	text-align: center;
+	font-size: 18px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	color: #fe989d;
+}
+.bottom-img {
+	position: absolute;
+	bottom: 0;
+}
+
+.section-bottom p {
+	padding: 35px 20px;
+	font-size: 16px;
+	color: #fff;
+	width: 95%;
+	float: right;
+	z-index: 999;
+	position: absolute;
+	right: 0;
+	word-break: break-all;
+}
+
+/*end couple css*/
+
+/*------------------------------ Health-break page css------------------------*/
+
+
+.postid-3601 .padding-all {
+	padding: 0;
+}
+.health-page {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'AvenirNextLTPro-Demi';
+}
+.top-section-health {
+	background: #eaf8fc;
+	padding: 20px;
+	float: left;
+}
+.top-left h4 {
+	text-align: center;
+}
+.page-heading {
+	background-image: url(images/gold-texture.png);
+	background-repeat: no-repeat;
+	height: 74px;
+	font-size: 44px;
+	padding: 15px 25px;
+	font-weight: 600;
+	margin: 30px 0;
+}
+.top-section-health .top-left {
+	float: left;
+	width: 54%;
+	padding: 20px 5px;
+}
+.top-section-health .top-right {
+	float: right;
+	width: 46%;
+	overflow: hidden;
+}
+.blue-color {
+	color: #7ca9c5;
+}
+.top-section-health p {
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	padding-right: 5px;
+	line-height: 20px;
+}
+.top-right p {
+	text-align: right;
+	padding-right: 20px;
+}
+.health-section-2 {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	float: left;
+	display: block;
+	font-size: 18px;
+}
+.health-section-2::after {
+	background: url(https://en.nzpuretour.com/wp-content/uploads/2017/12/health-right-img.png) no-repeat;
+	content: "";
+	height: 450px;
+	width: 100%;
+	position: absolute;
+	background-position: right;
+	top: 0;
+	right: 0;
+}
+.border-left {
+	border-left: 3px solid #f3d065;
+	height: 100px;
+	margin-left: 80px;
+	width: 20px;
+}
+.p-heading {
+	width: 20px;
+	font-size: 30px;
+	word-break: break-all;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 30px;
+	position: absolute;
+	left: 7px;
+	top: 8%;
+	z-index: 999;
+	text-align: center;
+}
+.section-3 {
+	background: #fff url(images/bg-img3.png) no-repeat;
+	height: 636px;
+	width: 100%;
+	float: left;
+
+}
+.head-logo {
+	margin-left: -25px;
+	margin-top: 64px;
+	position: absolute;
+}
+.health-inner {
+	padding-left: 20px;
+	border-left: 3px solid #f3d065;
+	padding-top: 30px;
+	font-size: 17px;
+	display: inline-table;
+	position: relative;
+	padding-bottom: 30px;
+	width: 96%;
+	float: right;
+}
+.health1, .health2, .health3 {
+	margin-left: -40px;
+	padding-right: 20px;
+	float: left;
+	margin-bottom: 25px;
+	font-size: 16px;
+	line-height: 20px;
+	display: inline-block;
+}
+.health1 {
+	width:52%;
+}
+.health2 {
+	width:70%;
+}
+.health3 {
+	width:90%;
+}
+.health1 .h-img {
+	width: 38%;
+	float: left;
+	margin-top: 20px;
+}
+.health1 .h-text {
+	width: 58%;
+	float: left;
+	margin-left: 10px;
+}
+
+.health2 .h-img {
+	width: 28%;
+	float: left;
+}
+.health2 .h-text {
+	width: 70%;
+	float: left;
+	margin-left: 10px;
+}
+.health3 .h-img {
+	width: 22%;
+	float: left;
+}
+.health3 .h-text {
+	width: 76%;
+	float: left;
+	margin-left: 10px;
+}
+.diff-section {
+	width: 82%;
+	background: #fff;
+	float: right;
+	font-size: 18px;
+	line-height: 20px;
+	position: absolute;
+	bottom: -28px;
+	right: 20px;
+}
+.activity-section {
+	width: 100%;
+	background: #fff;
+	float: left;
+}
+.activity-inner {
+	padding-left: 15px;
+	border-left: 3px solid #f3d065;
+	padding-top: 50px;
+	font-size: 17px;
+	background: #eaf8fc;
+	width: 96%;
+	float: left;
+	padding-bottom: 20px;
+	float: right;
+}
+.activity-inner h1 {
+	font-size: 44px;
+	font-weight: 600;
+}
+.diff-section p {
+	padding: 5px 5px 5px 15px;
+	font-size: 16px;
+}
+.activity-left {
+	width: 50%;
+	float: left;
+}
+.activity-left ul {
+	padding: 0 5px;
+}
+.activity-left ul li {
+	list-style: disc;
+}
+.activity-right {
+	width: 50%;
+	float: right;
+}
+.onsite-act h3 , .offsite-act h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+.onsite-act {
+	width: 100%;
+	float: left;
+}
+.offsite-act {
+	width: 100%;
+	float: left;
+	padding: 25px 0 0;
+}
+.offsite-box {
+	background: #ffffff;
+	padding: 20px;
+	margin: 20px 0 0;
+	height: 180px;
+	box-shadow: 0px 1px 4px 2px #cccccc;
+	line-height: 20px;
+	font-size: 16px;
+}
+.act-img {
+	margin: 20px 0 32px;
+	text-align:center;
+}
+.text-col {
+	width: 35%;
+	float: left;
+	margin: 0 5px;
+}
+.img-col {
+	width: 24%;
+	float: left;
+	margin: 0 5px;
+}
+.planning-box {
+	background: #fff;
+	width: 92%;
+	float: left;
+	margin-left: 3%;
+	box-shadow: 0px 1px 4px 2px #cccccc;
+	padding: 15px 20px;
+}
+.planning-text {
+	width: 55%;
+	float: left;
+}
+.planning-img {
+	width: 45%;
+	float: left;
+	text-align: right;
+}
+.planning-box h2 {
+	padding-bottom: 0;
+	margin-bottom: 15px !important;
+}
+.planning-text p {
+	font-size: 16px;
+	line-height: 22px;
+	padding-right: 10px;
+}
+.english-cherry-section {
+	width: 100%;
+	float: left;
+	position: relative;
+	background: #fff;
+}
+.english-cherry-section::before {
+	background: url(https://en.nzpuretour.com/wp-content/uploads/2017/12/img-left-health.png) no-repeat;
+	position: absolute;
+	content: "";
+	top: 0;
+	height: 400px;
+	width: 100%;
+	left: 15px;
+}
+.english-cherry-text .p1 {
+	width: 70%;
+}
+.english-cherry-text .p2 {
+	width: 55%;
+}
+.english-cherry-text h1 {
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-left: 12%;
+	margin-bottom: 30px;
+}
+.english-cherry-text .p1, .english-cherry-text .p2 {
+	float: right;
+	margin-right: 5%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+}
+.health-footer {
+	width: 100%;
+	float: left;
+	background: #fff;
+	padding-top: 28px;
+}
+.health-footer img {
+	width: 100%;
+}
+/*---- end Health-break css--------*/
+
+
+/*Add by Leon*/
+
+.contact-desc {
+	padding-left: 160px;
+	margin-bottom: 10px;
+}
+
+.tm-extra-product-options-container .fullwidth
+{
+  display:none!important;
+
+}
+
+.tm-extra-product-options-container .general_deposit
+{
+    display:none!important;
+
+}
+
+ul.subscribeComp {
+    list-style:none;
+    list-style-position: outside;
+}
+
+ul.subscribeComp li::before{
+    content:'✓ ';
+}
+
+.vc_btn3-container.vc_btn3-left{
+	display:none!important;
+}
+
+.unequal-img.imgpool {
+	background-image: url("http://en.nzpuretour.com/wp-content/uploads/2018/09/PondReflections.jpg");
+}
+
+.unequal-img.imgstone1 {
+	background-image: url("http://en.nzpuretour.com/wp-content/uploads/2018/09/CherryTreesAndWall20180917.jpg");
+}
+
+.unequal-img.imgstone2 {
+	background-image: url("http://en.nzpuretour.com/wp-content/uploads/2018/09/CherryTreeCircle20180917.jpg");
+}
+
+.unequal-img.imgspirit1 {
+	background-image: url("http://en.nzpuretour.com/wp-content/uploads/2018/09/P1000434.jpg");
+}
+
+.unequal-img.imgspirit2 {
+	background-image: url("http://en.nzpuretour.com/wp-content/uploads/2018/09/P1010301.jpg");
+}
+
+.unequal-img.imgspirit3 {
+	background-image: url("http://en.nzpuretour.com/wp-content/uploads/2018/09/P1010302.jpg");
+}
+/*Add by Leon*/
+
+
+
+/*-----------------------------------Easy Cycling Tour CSS--------------------------------*/
+
+
+.cycle-section::before {
+	background: url(https://en.nzpuretour.com/wp-content/uploads/2018/01/cycle-left-img.png) no-repeat;
+	content: "";
+	height: 612px;
+	width: 87%;
+	left: 2px;
+	position: absolute;
+	float: right;
+	margin-left: 15px;
+}
+.cycle-section {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	float: left;
+	display: block;
+	height: 490px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.cycle-table .cell-half, .camping-table .cell-half {
+	background: #fff;
+	height: auto;
+	width: 100%;
+	display: block;
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	line-height:24px;
+	font-size:14px;
+}
+
+.cycle-tour-inner {
+	padding-top: 5%;
+	font-size: 17px;
+	line-height: 25px;
+}
+.cycle-tour-inner .p1 {
+	padding-left: 45%;
+	padding-right: 8%;
+}
+
+.cycle-tour-inner .p3 {
+	width: 75%;
+	padding-right: 5%;
+	float: right;
+	margin: 25px 20px;
+}
+
+.cycle-tour-inner .p2 {
+	padding-left: 40%;
+}
+
+.cycle-table-tag {
+	left: 10px;
+}
+.cycle-full-img {
+	background: url(https://en.nzpuretour.com/wp-content/uploads/2018/01/cycle-banner.png);
+	height: 130px;
+	width: 100%;
+	float: left;
+	background-size: cover;
+}
+.section-3.cycle-section-3 {
+	background-size: cover;
+}
+.head-logo-cycle {
+	margin-top: 28px;
+}
+
+.head-logo-cycle img {
+	width: 80.5%;
+}
+
+.cycle-section-3 .content-inner {
+	margin-left: 22px;
+	width: 55%;
+}
+
+.cycle-section-3 .content-inner p {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+
+
+/*---------------------------- Camping Page CSS--------------------------*/
+
+.post-4169 .padding-all {
+	padding: 0;
+}
+.camping-full-img {
+	background: url(https://en.nzpuretour.com/wp-content/uploads/2018/01/camping-banner.png);
+	height: 130px;
+	width: 100%;
+	float: left;
+	background-size: cover;
+}
+.camping-section::before {
+	background: url(https://en.nzpuretour.com/wp-content/uploads/2018/01/camping-left.png) no-repeat;
+	content: "";
+	height: 612px;
+	width: 87%;
+	left: -4px;
+	position: absolute;
+	float: right;
+	margin-left: 15px;
+}
+
+
+/*---------------------------- Adventure Thrill Page--------------------------*/
+
+
+#product-4285 #tabdescription .padding-all {
+	padding: 20px;
+}
+.adventure-images .row1 .col-md-6, .adventure-images .row2 .col-md-6{
+	padding-left: 0px;
+	margin-bottom: 15px;
+}
+.adventure-images .row1 .adv-img img {
+	height: 220px;
+}
+
+.adventure-images .row2 .adv-img img {
+	height: 400px;
+	width: 100%;
+}
+
+.adv-img {
+	margin-bottom: 15px;
+}
+.thrill-program {
+	width: 98%;
+	margin: 40px 0;
+}
+
+.thrill-program h2 {
+	font-size: 26px !important;
+}
+.thrill-table {
+	background: #fff;
+	margin-bottom:30px;
+}
+.adv-img img {
+	width: 98%;
+}
+
+.thrill-review {
+	width: 98%;
+	float: left;
+	margin: 30px 0;
+	border: 3px solid #666;
+	padding: 15px;
+}
+
+.thrill-review .quote .text-right {
+	float: right;
+	margin-right: 20px;
+	font-weight: 600;
+}
+
+
+
+/*---------------------------------------Responsive CSS--------------------------------*/
+
+
+@media only screen and ( max-width:1024px){
+.short-break-page{
+	width: 100%;
+}
+.couple-page {
+	width: 940px;
+}
+.section-half h3 {
+	font-size: 20px;
+}
+.tour-list {
+	width: 100%;
+	height: auto;
+}
+.top-left {
+	width: 57%;
+}
+.top-right {
+	width: 43%;
+}
+ul.points {
+	font-size: 17px;
+}
+.top-section-couple p {
+	padding-top: 15px;
+	font-size: 17px;
+}
+.section-2::before {
+	left: 32px;
+}
+.section-2-inner {
+	width: 94.5%;
+}
+.section-2 {
+	font-size: 16px;
+	line-height: 20px;
+}
+.p-img {
+	padding-right: 10px;
+	margin-top: -18px;
+}
+.col-span-2 {
+	width: 50%;
+}
+.cell-60 {
+	width: 520px;
+}
+.program-section-details {
+	width: 96.1%;
+	margin-top: -15px;
+}
+.p-heading {
+	left: 26px;
+}
+.head-logo {
+	margin-left: -25px;
+	margin-top: 28px;
+	width: auto;
+}
+.head-logo img {
+	height: 346px;
+	width: 100%;
+}
+.content-inner {
+	height: 98.6%;
+	margin-left: 36px;
+}
+.heading-last {
+	width: 72%;
+	padding: 15px 15px 0;
+}
+.section-bottom p {
+	width: 96%;
+}
+.health1, .health2, .health3 {
+	font-size: 14px;
+	line-height: 18px;
+}
+.health1 {
+	width: 47%;
+}
+.health1 .h-text {
+	width: 58%;
+}
+.health2 .h-img {
+	width: 22%;
+	float: left;
+}
+.health3 .h-img {
+	width: 17%;
+	float: left;
+}
+.diff-section p {
+	padding: 5px 5px 8px 15px;
+	font-size: 15px;
+}
+.activity-inner {
+	font-size: 15px;
+	line-height: 20px;
+}
+.activity-right {
+	width: 48%;
+	float: left;
+}
+.offsite-box {
+	line-height: 18px;
+	font-size: 14px;
+}
+.offsite-act {
+	padding: 25px 0;
+}
+.planning-text p {
+	font-size: 14px;
+	line-height: 20px;
+}
+.english-cherry-text h1 {
+	margin-bottom: 15px;
+}
+.english-cherry-text .p1, .english-cherry-text .p2 {
+	margin-right: 2%;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+.english-cherry-text .p1 {
+	width: 72%;
+}
+.english-cherry-text .p2 {
+	width: 50%;
+}
+.easy-cycling-tour .top-left p {
+	font-size: 15px;
+	line-height: 22px;
+	padding-top: 5px;
+}
+.easy-cycling-tour h4 {
+	margin-top: 0px;
+}
+.easy-cycling-tour .top-right {
+	margin-top: 14%;
+}
+.cycle-tour-inner {
+	font-size: 15px;
+	padding-left: 5%;
+}
+.easy-cycling-tour .program-section-details {
+	width: 94.4%;
+}
+.p-heading.cycle-table-tag {
+	left: 40px;
+}
+.head-logo.head-logo-cycle {
+	margin-top: 46px;
+}
+.head-logo-cycle img {
+	width: 98%;
+}
+.cycle-section-3 .content-inner {
+	margin-left: 52px;
+}
+}
+
+@media only screen and ( max-width:960px){
+#booking_form_start {
+	float: left;
+}
+.header-wrap--sticky-header .header__content, .header__content {
+	line-height: 30px !important;
+}
+.page-heading {
+	font-size: 36px;
+	padding: 20px 25px;
+}
+.health1 .h-img {
+	width: 34%;
+}
+.health-footer {
+	padding-top: 48px;
+}
+.block1, .block2 {
+	padding: 20px;
+}
+.content-block {
+	margin: 20px 20px 0;
+}
+.block-title {
+	font-size: 24px;
+}
+.block1 p {
+	width: 60%;
+	font-size: 15px;
+	line-height: 20px;
+}
+.form-block-main .wpcf7-list-item {
+	width: 80%;
+}
+.contact-desc {
+	padding-left: 80px;
+}
+.content-block-form {
+	margin: 25px 20px -60px 20px;
+	width: 98%;
+}
+.tour-list p {
+	font-size: 15px;
+	line-height: 20px;
+}
+.couple-page {
+	width: 100%;
+}
+ul.points {
+	font-size: 15px;
+	line-height: 20px;
+}
+.top-section-couple p {
+	padding-top: 10px;
+	font-size: 15px;
+}
+.program-section-details {
+	width: 95%;
+}
+.section-2-inner .p1 {
+	width: 90%;
+	padding-top: 70px;
+}
+
+.head-logo {
+	margin-top: 136px;
+}
+.section-2::before {
+	left: 19px;
+}
+.program-table .width-60 {
+	width: 70%;
+}
+.cell-half {
+	background: #fff;
+	height: auto;
+}
+.heading-last h1 {
+	font-size: 20px;
+}
+.review-box {
+	width: 90%;
+}
+.review-part {
+	width: 60%;
+	padding-right: 10px;
+}
+.review-part p {
+	font-size: 14px;
+	line-height: 18px;
+}
+.easy-cycling-tour .top-left {
+	width: 100%;
+	padding: 0 5%;
+}
+.easy-cycling-tour .top-right {
+	margin-top: 40px;
+	width: 70%;
+	float: right;
+}
+.easy-cycling-tour .top-right img {
+	width: 100%;
+}
+.cycle-section.section-2 {
+	height: 100% ;
+}
+.cycle-tour-inner .p2 {
+	padding-left: 32%;
+}
+.cycle-tour-inner .p3 {
+	width: 95%;
+}
+.head-logo.head-logo-cycle {
+	margin-top: 155px;
+}
+.cycle-section-3 .content-inner {
+	margin-left: 40px;
+}
+.head-logo-cycle img {
+	width: 100%;
+}
+.cycle-section-3 .content-inner p {
+	font-size: 14px;
+	line-height: 22px;
+}
+.cycle-section-3 .content-inner {
+	width: 70%;
+}
+.p-heading.cycle-table-tag {
+	left: 28px;
+}
+.head-logo.head-logo-cycle {
+	width: 49.6%;
+}
+
+}
+@media only screen and ( max-width:768px){
+.cycle-full-img {
+	height: 80px;
+}
+}
+
+@media only screen and ( max-width:736px){
+.english-cherry-section::before {
+	top: 20px;
+	left: 0;
+}
+.health-footer {
+    padding-top: 68px;
+}
+.block2 p {
+	line-height: 22px;
+}
+.block-title {
+	font-size: 22px;
+}
+.section-2-inner .p2 {
+	padding-left: 12%;
+}
+.head-logo {
+	width: 50.6%;
+}
+.cycle-tour-inner .p2 {
+	width: 90%;
+	float: right;
+}
+.camping-section .p2 {
+	padding-left: 30%;
+}
+}
+
+@media only screen and ( max-width:667px){
+.english-cherry-section::before {
+	top: 40px;
+	left: 0;
+}
+.offsite-box {
+	height: auto;
+}
+.health-inner.health-box {
+	padding-top: 17%;
+}
+.health-footer {
+    padding-top: 48px;
+}
+.img-block, .img-block-mobile {
+	width: 44%;
+}
+.block1 p {
+	width: 70%;
+}
+.content-block-form {
+	margin: 25px 20px -60px 20px;
+}
+.section-2::before {
+	left: 14px;
+}
+.top-left {
+	margin-bottom: 20px;
+}
+.section-2-inner .p1 {
+	width: 96%;
+	padding-top: 25%;
+}
+.section-2-inner .p3 {
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+.p-heading {
+	left: 20px;
+}
+.head-logo {
+	margin-top: 190px;
+}
+.section-2-inner .p2 {
+	padding-left: 35%;
+}
+.cycle-tour-inner .p2 {
+	padding-left: 15%;
+}
+.content-inner {
+	margin-left: 31px;
+}
+.section-3 .content-inner {
+	width: 80%;
+}
+.review-part {
+	width: 55%;
+}
+.review-box q, .review2 {
+	font-size: 16px;
+}
+.cycle-section-3 .content-inner {
+	margin-left: 35px;
+}
+.head-logo.head-logo-cycle {
+	margin-top: 207px;
+}
+
+}
+
+@media only screen and ( max-width:640px){
+.english-cherry-section::before {
+	top: 100px;
+	left: 0;
+}
+.health-footer {
+	padding-top: 88px;
+}
+.footer-img {
+	height: 530px;
+}
+.footer-img img {
+	height: 530px;
+}
+.form-block-main {
+	width: 65%;
+}
+
+.other-details li {
+	font-size: 16px;
+	line-height: 24px;
+	padding-left: 16px;
+}
+.review-part {
+	width: 53%;
+}
+ul.points {
+	line-height: 22px;
+}
+.cycle-tour-inner .p1 {
+	padding-top: 33%;
+}
+.camping-section .p1 {
+	padding-top: 30%;
+}
+.camping-section .p2 {
+	padding-left: 20%;
+}
+}
+
+
+@media only screen and ( max-width:600px){
+.top-section-health .top-left, .top-section-health .top-right {
+	width: 100%;
+}
+.page-heading {
+	font-size: 28px;
+}
+.health-section-2::after {
+	height: 300px;
+	width: 420px;
+	background-position: bottom;
+}
+.health1 {
+	width: 80%;
+}
+.health1 .h-text {
+	width: 100%;
+	margin-left: 35px;
+}
+.health1 .h-img {
+	width: 100%;
+	margin-top: 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.health2, .health3 {
+	width: 100%;
+}
+.health2 .h-img , .health3 .h-img{
+	width: 30%;
+}
+.health2 .h-text , .health3 .h-text{
+	width: 65%;
+}
+.health3 {
+	margin-bottom: 60px;
+}
+.diff-section {
+	width: 90%;
+}
+.activity-left {
+	width: 100%;
+}
+.activity-right {
+	width: 50%;
+}
+.offsite-box {
+	padding: 12px;
+	height: 180px;
+	line-height: 16px;
+	font-size: 13px;
+}
+.planning-text {
+	width: 100%;
+}
+.planning-img {
+	width: 100%;
+	float: left;
+	text-align: left;
+	margin: 15px 0 0;
+}
+.health-footer {
+	padding-top: 118px;
+}
+.english-cherry-section::before {
+	top: 30%;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background-position: left;
+	overflow: hidden;
+}
+.english-cherry-text .p1 {
+	width: 85%;
+}
+.english-cherry-text .p2 {
+	width: 50%;
+}
+.section-2::before {
+	left: 10px;
+}
+.section-2-inner .p1 {
+	width: 100%;
+	padding-top: 40%;
+}
+.head-logo {
+	margin-top: 235px;
+}
+.program-section-details {
+	padding-bottom: 40px;
+}
+.other-details li {
+	line-height: 23px;
+	padding-left: 20px;
+}
+.content-inner {
+	margin-left: 28px;
+}
+.review-part {
+	width: 94%;
+	padding-bottom: 260px;
+}
+.break {
+	margin-top: 8px;
+}
+}
+
+@media only screen and ( min-width:533px) and (max-width:568px){
+.text-col {
+	width: 94%;
+}
+.offsite-box {
+	padding: 20px 15px;
+	height: auto;
+	min-height: 120px;
+}
+.img-col {
+	width: 100%;
+	margin: 0 auto;
+}
+.english-cherry-text h1 {
+	margin-left: 0;
+	font-size: 28px;
+}
+.english-cherry-section::before {
+	top: 40%;
+}
+.health-footer {
+	padding-top: 168px;
+}
+.img-block, .img-block-mobile {
+	top: 60px;
+}
+.head-logo {
+	margin-top: 304px;
+}
+.content-inner {
+	margin-left: 26px;
+}
+.section-3 .content-inner {
+	width: 85%;
+}
+.section-2-inner .p1 {
+	padding-top: 45%;
+}
+}
+
+@media only screen and ( min-width:500px) and (max-width:533px){
+.section-2-inner .p1 {
+	padding-top: 60%;
+}
+.top-left {
+	width: 96%;
+}
+.top-right {
+	width: 80%;
+	margin: 0 auto;
+	float: none;
+}
+.section-2::before {
+	width: 95%;
+	left: 7px;
+}
+.section-2-inner .p2 {
+	padding-left: 18%;
+}
+.p-heading {
+	left: 12px;
+}
+.head-logo {
+	margin-top: 392px;
+}
+.program-section-details {
+	padding-bottom: 60px;
+}
+.content-inner {
+	margin-left: 24px;
+}
+.section-3 .content-inner {
+	width: 90%;
+}
+.section-bottom p {
+	font-size: 13px;
+}
+
+}
+
+@media only screen and ( max-width:480px){
+.health-section-2::after {
+	height: 80%;
+	width: 96%;
+	background-position: top;
+}
+.page-heading {
+	font-size: 24px;
+}
+.health-inner.health-box {
+	padding-top: 40%;
+}
+.health1 .h-text {
+	width: 70%;
+	margin-left: 35px;
+}
+.health1 .h-img {
+	width: 50%;
+	text-align: left;
+}
+.health2 .h-img, .health3 .h-img {
+	width: 40%;
+}
+.health2 .h-text, .health3 .h-text {
+	width: 57%;
+}
+.text-col {
+	width: 93%;
+}
+.offsite-box {
+	height: auto;
+	min-height: 100px;
+}
+.img-col {
+	width: 100%;
+	margin: 0 auto;
+}
+.act-img {
+	margin: 10px 0;
+}
+.english-cherry-text h1 {
+	margin-left: 0;
+	font-size: 28px;
+}
+.english-cherry-text .p1 {
+	width: 90%;
+}
+.english-cherry-section::before {
+	top: 45%;
+}
+.health-footer {
+	padding-top: 185px;
+}
+.img-block {
+	top: 60px;
+}
+.section-half {
+	width: 100%;
+}
+.form-block-main {
+	width: 75%;
+}
+.contact-desc {
+	padding-left: 40px;
+}
+.footer-img {
+	height: auto;
+}
+.footer-img img {
+	height: auto;
+}
+.top-left {
+	width: 96%;
+}
+.top-right {
+	width: 80%;
+	margin: 0 auto;
+	float: none;
+}
+.section-2::before {
+	display: none;
+}
+.section-2-inner .p1 {
+	width: 100%;
+	padding-top: 40px;
+	padding-left: 20px;
+}
+.section-2-inner .p2 {
+	padding-left: 10%;
+}
+.cell-half {
+	line-height: 17px;
+}
+.width-40.PR-20 {
+	padding-right: 20px;
+}
+p.text-right {
+	padding-left: 12px;
+}
+.width-40 , .width-60{
+	width: 100%;
+}
+.BL-3 {
+	border-left: none;
+}
+p.text-right {
+	text-align: left;
+	padding-left: 25px;
+}
+ul {
+	padding: 0;
+}
+.head-logo img {
+	height: 250px;
+}
+.program-section-details {
+	padding-bottom: 200px;
+}
+.section-3 .content-inner {
+	width: 96%;
+}
+.section-3 p {
+	line-height: 20px;
+}
+.content-inner {
+	margin-left: 22px;
+}
+.review-part {
+	width: 90%;
+	padding-bottom: 250px;
+}
+.p-heading {
+	left: 10px;
+}
+.head-logo {
+	margin-top: 557px;
+}
+.cycle-tour-inner .p2 {
+	padding-left: 0px;
+}
+.p-heading.cycle-table-tag {
+	left: 12px;
+}
+.head-logo.head-logo-cycle {
+	margin-top: 592px;
+}
+.cycle-section-3 .content-inner {
+	margin-left: 24px;
+}
+.cycle-table .width-60 {
+	width: 97%;
+}
+.page-id-4202 .fullscreen.background {
+	height: ;
+	width: 100%;
+	height: 300px !important;
+	background-size: ;
+	background-position: center;
+}
+.page-id-4551 .fullscreen.background {
+	height: ;
+	width: 100%;
+	height: 300px !important;
+	background-size: ;
+	background-position: center;
+}
+
+.page-id-4887 .fullscreen.background {
+	height: ;
+	width: 100%;
+	height: 300px !important;
+	background-size: ;
+	background-position: center;
+}
+
+.page-id-4951 .fullscreen.background {
+	height: ;
+	width: 100%;
+	height: 300px !important;
+	background-size: ;
+	background-position: center;
+}
+.page-id-4995 .fullscreen.background {
+	height: ;
+	width: 100%;
+	height: 300px !important;
+	background-size: ;
+	background-position: center;
+}
+
+.gallery-heading {
+    background: rgba(0, 0, 0, 0) url("https://en.nzpuretour.com/wp-content/uploads/2017/12/heading-bg.png") no-repeat scroll 0 0;
+    height: 50px;
+    margin: 0 auto 40px;
+    padding: 9px 20px;
+}
+
+
+#cherry_book {
+	width: 150px !important;
+}
+}
+
+
+@media only screen and ( max-width:414px){
+.top-section {
+	height: 560px;
+	padding: 60px 10px;
+}
+.top-section-couple p {
+	padding-top: 10px;
+	font-size: 15px;
+	padding-bottom: 16px;
+}
+.title-block {
+	float: right;
+	width: 65%;
+}
+.top-content {
+	width: 100%;
+	margin: 20% auto;
+}
+.top-content pre, .top-content p {
+	line-height: 20px;
+}
+.title-block img {
+	width: 100%;
+}
+.img-block {
+	display: none;
+}
+.img-block-mobile {
+	display: block;
+	width: 90%;
+}
+.content-block {
+	margin: 60% 20px 0;
+	width: 100%;
+}
+.block-title {
+	width: 100%;
+	font-size: 18px;
+}
+.block1, .block2 {padding: 10px; width:94%;}
+.block1 p {
+	width: 90%;
+}
+.form-block-main {
+	width: 90%;
+}
+.section-half {
+	width: 94%;
+}
+.short-break-page p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.form-block-main ul {
+	width: 100%;
+}
+.footer-img, .footer-img img {
+	height: 300px;
+}
+.couple-page {
+	width: 100%;
+}
+.top-section-couple {
+	padding: 0px;
+}
+.page-heading {
+	font-size: 23px;
+	padding: 25px;
+}
+.top-right {
+	width: 100%;
+}
+.top-left{
+	width: 100%;
+	padding: 0 10px;
+}
+
+ul.points {
+	padding: 0 25px;
+	font-size: 15px;
+}
+.section-2 {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.p1, .p3 {
+	padding: 0 20px;
+}
+.p2 {
+	padding: 0 30px;
+}
+.p4 {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 30px;
+}
+.table-responsive {
+	width: 100%;
+	overflow-x: auto;
+}
+.cell-half {
+	padding: 0 5px;
+	background: #fff;
+	line-height: 13px;
+	padding: 10px;
+	height: 100%;
+}
+.program-table {
+	font-size: 13px;
+}
+.p-heading {
+	left: 0;
+}
+.program-section-details {
+	width: 96%;
+	padding-bottom: 0;
+}
+.program-table .width-40 {
+	width: 20%;
+	padding: 0;
+}
+.other-details .width-40, .other-details .width-60 {
+	width: 100%;
+}
+.width-60.PL-20.BL-3 {
+	border-top: 3px solid #f3d065;
+	border-left: none;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-left: 0;
+}
+.other-details {
+	margin-top: 15px;
+}
+.width-40.PR-20 {
+	padding-right: 20px;
+}
+.other-details h3 {
+	font-size: 24px;
+	margin-bottom: 7px;
+}
+.head-logo {
+	margin-left: -25px;
+	margin-top: 0px;
+	position: relative;
+}
+.head-logo img {
+	height: auto;
+	width: 75%;
+}
+.content-inner {
+	width: 94%;
+	padding-top: 7px;
+	font-size: 13px;
+	line-height: 17px;
+	margin-left: 15px;
+	height: 100%;
+}
+.heading-last {
+	width: 90%;
+	margin: -25px auto;
+}
+.heading-last h1 {
+	font-size: 20px;
+	text-align: center;
+}
+.review-box {
+	width: 90%;
+	font-size: 13px;
+	line-height: 18px;
+	margin-top: 40px;
+}
+.review2 {
+	font-size: 14px;
+}
+.review-part {
+	width: 90%;
+}
+.review-part p {
+	font-size: 15px;
+	line-height: 20px;
+}
+.section-bottom {
+	margin-top: 220px;
+}
+.section-bottom p {
+	font-size: 13px;
+	width: 100%;
+	line-height: 20px;
+}
+.top-section-health {
+	padding: 15px 10px;
+}
+.health-page .page-heading {
+	font-size: 20px;
+	padding: 20px;
+}
+.top-section-health .top-left {
+	width: 100%;
+	padding: 5px;
+}
+.top-section-health .top-right {
+	width: 100%;
+}
+.top-right p {
+	text-align: left;
+}
+
+.health-inner.health-box {
+	padding-top: 75%;
+	padding-bottom: 50px;
+}
+.health1, .health2, .health3 {
+	margin-left: 0;
+	font-size: 14px;
+	line-height: 18px;
+}
+.health1 .h-text {
+	width: 100%;
+	margin-left:0px;
+
+}
+.health1, .health2, .health3 {
+	width: 100%;
+}
+.health1 .h-img {
+	width: 70%;
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+.health2 .h-img, .health3 .h-img {
+	width: 55%;
+}
+.health2 .h-text,.health3 .h-text {
+	width: 100%;
+	margin-left: 0;
+	margin-top: 10px;
+}
+.health-inner {
+	padding-bottom: 95px;
+}
+.diff-section {
+	width: 90%;
+}
+.diff-section p {
+	font-size: 14px;
+}
+.activity-left, .activity-right, .planning-text,.planning-img, .english-cherry-text .p1, .english-cherry-text .p2 {
+	width: 100%;
+}
+.activity-inner, .english-cherry-text .p1, .english-cherry-text .p2 {
+	font-size: 15px;
+	line-height: 20px;
+}
+.text-col {
+	width: 92%;
+}
+.offsite-box {
+	height: 160px;
+	line-height: 20px;
+	font-size: 15px;
+}
+.img-col {
+	width: 95%;
+}
+.act-img {
+	margin: 10px 0;
+}
+.planning-box {
+	width: 94%;
+	margin-left: 0;
+	margin-top: 5%;
+}
+.planning-text p {
+	font-size: 14px;
+	line-height: 20px;
+	padding-right: 0;
+}
+.english-cherry-text h1 {
+	margin-left: 0;
+	margin-bottom: 15px;
+	font-size: 24px;
+}
+.english-cherry-section::before {
+	top: 70%;
+}
+.english-cherry-section {
+	margin-bottom: 190px;
+}
+.health-footer {
+	padding-top: 128px;
+}
+.review-part {
+	width: 90%;
+	padding-bottom: 25px;
+}
+.cycle-section.section-2 {
+	margin-top: 0px;
+}
+.cycle-table .cell-half {
+	padding: 10px 8px;
+	line-height: 16px;
+	font-size: 13px;
+}
+.cycle-tour-inner {
+	font-size: 14px;
+	padding-left: 0;
+	line-height: 20px;
+}
+.cycle-section-3 .content-inner {
+	margin-left: 21px;
+}
+.section-3.cycle-section-3 {
+	height: 900px;
+	padding-right: 15px;
+}
+.easy-cycling-tour .top-right {
+	width: 100%;
+}
+.head-logo , .head-logo.head-logo-cycle{
+	width: 100%;
+}
+}
+
+@media only screen and ( max-width:375px){
+.img-block-mobile {
+	width: 88%;
+	margin: 0 6%;
+}
+.page-heading {
+	font-size: 20px;
+	font-weight: bolder;
+}
+.section-3.cycle-section-3 {
+	height: 950px;
+}
+.cycle-section-3 .content-inner {
+	margin-left: 18px;
+}
+.easy-cycling-tour h4 {
+	font-size: 18px;
+	line-height: 22px;
+}
+}
+
+
+@media only screen and ( max-width:360px){
+.page-heading {
+	font-size: 18px !important;
+	padding: 20px 10px;
+}
+
+.section-2-inner {
+	padding-top: 20px;
+}
+.content-inner {
+	width: 95%;
+	font-size: 13px;
+	line-height: 18px;
+	margin-left: 13px;
+	padding-left: 5px;
+	height: 98.6%;
+}
+.section-bottom p {
+	font-size: 12px;
+	width: 100%;
+	line-height: 20px;
+	padding: 10px 5px;
+	background: #000;
+	bottom: 0;
+}
+.section-bottom {
+	padding-right: 0;
+}
+ul.points {
+	font-size: 15px;
+	line-height: 22px;
+}
+ul.points li {
+	padding-bottom: 5px;
+}
+.top-section-couple p {
+	padding-top: 0;
+	font-size: 15px;
+	padding-left: 12px;
+	line-height: 22px;
+	padding-bottom: 14px;
+}
+.section-2 {
+	margin: 0px;
+}
+
+.contact-desc {
+	padding-left:20px;
+}
+.top-section-health p {
+	font-size: 15px;
+	line-height: 18px;
+}
+.health-box {
+	padding-top: 320px;
+}
+.health1 .h-img , .health1 .h-text{
+	 margin-left: 0px;
+}
+.activity-inner h1 {
+	font-size: 32px;
+}
+.activity-right {
+	padding: 10px;
+}
+.english-cherry-section::before {
+	width: 100%;
+}
+.offsite-box {
+	height: auto;
+}
+.health-footer {
+    padding-top: 125px;
+}
+.english-cherry-text .p1, .english-cherry-text .p2 {
+	padding: 5px;
+	text-align: left;
+}
+.onsite-act h3, .offsite-act h3 {
+	font-size: 21px;
+}
+.activity-inner, .english-cherry-text .p1, .english-cherry-text .p2 {
+	font-size: 14px;
+}
+.health3 .h-img, .health2 .h-img {
+	width: 60%;
+}
+.block1 p a, .block2 p a {
+	font-size: 13px;
+}
+.other-details h3 {
+	font-size: 20px;
+}
+.section-3 p {
+	background: #fff;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+.content-inner {
+	padding-left: 0;
+}
+.other-details li {
+	font-size: 15px;
+}
+}
+
+@media only screen and ( max-width:320px){
+.program-section-details {
+	width: 100%;
+	padding-left: 10px;
+}
+.program-section {
+	width: 95%;
+	float: right;
+}
+.head-logo {
+	margin-left: -10px;
+}
+.content-inner {
+	width: 100%;
+	line-height: 16px;
+	padding-top: 5px;
+	padding-right: 5px;
+	margin-left: 0;
+}
+.content-inner p {
+	height: auto;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.heading-last h1 {
+	font-size: 18px;
+}
+.section-bottom p {
+	width: 96%;
+	word-break: break-all;
+}
+.section-3 {
+	background-position: left;
+}
+.cell-half {
+	line-height: 15px;
+	font-size: 12px;
+}
+.p-heading {
+	left: -10px;
+}
+.offsite-box {
+	font-size: 14px;
+}
+.english-cherry-text .p1, .english-cherry-text .p2 {
+	text-align: left;
+	padding: 0 5px 0 0;
+}
+.english-cherry-text h1 {
+	margin-bottom: 7px;
+	font-size: 22px;
+}
+.english-cherry-section::before {
+	height: 100%;
+	top: 70%;
+	width: 100%;
+}
+.page-heading {
+	font-size: 16px !important;
+}
+.health-inner.health-box {
+	padding-top: 100%;
+}
+.health2 .h-img,.health3 .h-img {
+	width: 70%;
+}
+.block-title {
+	font-size: 17px;
+}
+.block1 p a, .block2 p a {
+	padding: 5px;
+	font-size: 12px;
+}
+.col-md-12.content {
+	padding: 12px 25px;
+}
+.form {
+	width: 90%;
+}
+ul.points {
+	padding: 0 16px;
+}
+.width-40.PR-20 {
+	padding-right: 0;
+}
+.other-details h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+.other-details li {
+	padding-left: 0;
+}
+ul {
+	padding: 15px;
+}
+.p-heading.cycle-table-tag {
+	left: 3px;
+}
+.cycle-tour-inner {
+	padding-left: 0;
+}
+.cycle-section-3 .content-inner {
+	margin-left: 14px;
+}
+}

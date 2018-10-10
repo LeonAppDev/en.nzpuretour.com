@@ -1,0 +1,37 @@
+.button{
+	height:45px;
+	line-height:45px;
+	padding:0 30px;
+	color:@main-color-white;
+	font-size:1.067em;
+	.mix-alternative-text();
+	text-transform:uppercase;
+	border:none;
+	border-radius:@main-border-radius;
+	white-space:nowrap;
+
+	&:focus, &:active{
+		outline:0;
+	}
+
+	&--with-icon{
+		i{
+			.margin-right(10px);
+		}
+
+		&-right{
+			i{
+				.margin-left(10px);
+			}
+		}
+	}
+
+	&--style1{
+		.mix-transition();
+		background:fade(@main-color1, 80%);
+
+		&:hover{
+			background:fade(@main-color1, 100%);
+		}
+	}
+}

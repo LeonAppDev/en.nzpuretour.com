@@ -1,0 +1,22 @@
+/*
+	Theme Name: Adventure Tours Child
+	Theme URI: http://themeforest.net/user/themedelight/portfolio
+	Description: Adventure Tours child theme
+	Template: adventure-tours
+	Version: 1.0.0
+*/
+@media print {
+   #logoLink img {
+      max-width : 300px !important;
+   }
+   .hide_print{
+      display : none !important;
+   }
+   .col-sm-4 {
+      width : 33.33333333% !important;
+      float: left;
+   }
+   body{
+      zoom : 70%;
+   }
+}

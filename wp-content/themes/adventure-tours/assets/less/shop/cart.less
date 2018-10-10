@@ -1,0 +1,304 @@
+@__cross-sells__item-max-width:530px;
+
+.woocommerce{
+	.cart-empty-box{
+		.mix-layout-box();
+	}
+
+	.cart-empty{
+		margin-bottom:20px;
+	}
+
+	.return-to-shop{
+		&-icon{
+			color:@main-color-white;
+			.margin-right(10px);
+		}
+
+		a{
+			height:40px;
+			line-height:40px;
+			margin:0;
+			padding:0 25px;
+			.mix-transition();
+			color:@main-color-white;
+			background:fade(@main-color1, 80%);
+
+			&:hover{
+				color:@main-color-white;
+				background:fade(@main-color1, 100%);
+			}
+		}
+	}
+
+	table.cart{
+		td,
+		th{
+			//padding:0;
+		}
+
+		.product-thumbnail{
+			a{
+				display:inline-block;
+				border:none;
+			}
+		}
+
+		.product-thumbnail{
+			padding:0;
+
+			img{
+				width:50px;
+			}
+		}
+
+		.product-remove{
+			a{
+				display:inline-block;
+				width:30px;
+				height:30px;
+				line-height:27px;
+				color:@warning-color !important;
+
+				&:hover{
+					color:@main-color-white !important;
+					background:@warning-color !important;
+				}
+			}
+		}
+
+		.coupon{
+			input.input-text{
+				height:45px;
+				line-height:43px !important;
+				width:200px !important;
+				.margin-right(10px !important);
+				padding:0 20px !important;
+			}
+		}
+
+		.cart-update-button{
+			background:fade(@main-color2, 80%) !important;
+
+			&:hover{
+				background:fade(@main-color2, 100%) !important;
+			}
+		}
+
+		td.actions{
+			padding:20px 40px;
+			border-bottom:none;
+
+			.input-text{
+				line-height:normal !important;
+			}
+		}
+	}
+
+	.cart-responsive-title{
+		display:none;
+		.margin-right(10px);
+		.mix-alternative-text();
+		text-transform:uppercase;
+
+		&:after{
+			content:":";
+		}
+	}
+}
+
+.woocommerce .cart-collaterals .cart_totals{
+	table{
+		width:100%;
+		border:@shop-table-border;
+		.border-left(@shop-table-border);
+		margin-bottom:@layout-indent-small;
+
+		td, th{
+			padding:10px 20px;
+			border:none;
+			border-bottom:@shop-table-border;
+		}
+
+		tr:last-child{
+			td, th{
+				border-bottom:none
+			}
+		}
+
+		th{
+			text-transform:uppercase;
+		}
+	}
+
+	.checkout-button{
+		width:100%;
+		text-align:center;
+	}
+
+	.wc-proceed-to-checkout{
+		padding:0;
+	}
+}
+
+.woocommerce{
+	.cross-sells__item{
+		.mix-margin-bottom();
+		max-width:@__cross-sells__item-max-width;
+
+		&:last-child{
+			margin-bottom:0;
+		}
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint1){
+	.woocommerce{
+		.cart-collaterals{
+			.cross-sells,
+			.cart_totals{
+				width:100% !important;
+				float:none !important;
+			}
+
+			.cross-sells{
+				.mix-margin-bottom();
+
+				&__item{
+					.mix-item-single-breakpoint(@__cross-sells__item-max-width);
+				}
+			}
+
+			.cart_totals{
+				table{
+					width:100%;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width:@responsive-breakpoint2){
+	.woocommerce{
+		.cart-responsive-title{
+			display:inline-block;
+		}
+
+		table{
+			&.shop_table{
+				display:block;
+				border:none;
+				margin-bottom:0 !important;
+
+				tbody,
+				th,
+				tr,
+				td{
+					display:block;
+				}
+
+				thead{
+					display:none;
+				}
+
+				tr{
+					&.cart_item{
+						.mix-margin-bottom();
+						border:@shop-table-border;
+
+						td:last-child{
+							border-bottom:0 !important;
+						}
+
+						.quantity{
+							display:inline-block;
+						}
+					}
+
+					.actions{
+						padding:0;
+						border-bottom:none !important;
+
+						.coupon{
+							.mix-margin-bottom();
+
+							.cart-button{
+								width:auto;
+								float:none;
+							}
+
+							.input-text{
+								width:50% !important;
+							}
+						}
+
+						.cart-update-button{
+							width:auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Respnsive
+@media(max-width:@responsive-breakpoint3){
+	.woocommerce{
+		table{
+			&.shop_table{
+				tr{
+					&.cart_item{
+						td{
+							padding:10px;
+						}
+					}
+
+					.actions{
+						.coupon{
+							.input-text{
+								width:100% !important;
+								margin-bottom:10px;
+								float:none;
+							}
+
+							.cart-button{
+								width:100% !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.cart-collaterals{
+			.cart_totals{
+				table{
+					display:block;
+
+					tbody,
+					th,
+					tr,
+					td{
+						display:block;
+					}
+
+					th,
+					td{
+						border:none;
+						padding:5px 10px;
+					}
+
+					tr{
+						border-bottom:@shop-table-border;
+
+						&:last-child{
+							border-bottom:none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

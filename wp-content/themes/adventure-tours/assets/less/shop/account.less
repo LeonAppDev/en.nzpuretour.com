@@ -1,0 +1,190 @@
+.woocommerce{
+	.myaccount_user{
+		.mix-layout-box();
+		.mix-padding-all();
+		.mix-margin-bottom();
+		line-height:2.133em;
+	}
+
+	.myaccount-box{
+		.mix-layout-box();
+		.mix-padding-all();
+
+		h2{
+			margin:0;
+			margin-bottom:20px;
+			font-size:1.467em;
+		}
+
+		.addresses{
+			h3{
+				margin:0;
+				font-size:1.200em;
+				float:none;
+			}
+
+			.title{
+				margin-bottom:15px;
+
+				a{
+					float:none;
+				}
+			}
+		}
+
+		.myaccount-edit-address-title{
+			margin:0;
+			margin-bottom:20px;
+			font-size:1.467em;
+		}
+
+		.account-eddit-button{
+			margin-top:20px !important;
+		}
+	}
+
+	form.login{
+		margin:0;
+		padding:0;
+		border:none;
+
+		.button{
+			.margin-right(20px);
+		}
+	}
+
+	.lost_reset_password{
+		.mix-layout-box();
+		.mix-padding-all();
+	}
+
+	.accout-orders{
+		table.shop_table{
+			margin-bottom:0;
+		}
+	}
+
+	.account-order-datais-responsive-title{
+		display:none;
+		.margin-right(10px);
+		.mix-alternative-text();
+		text-transform:uppercase;
+
+		&:after{
+			content:":";
+		}
+	}
+}
+
+.woocommerce-account{
+	.woocommerce{
+		fieldset{
+			margin:0;
+			padding:0;
+			border:none;
+
+			legend{
+				padding:15px 0 10px;
+				font-size:1.200em;
+				.mix-alternative-text();
+			}
+		}
+
+		.my_account_orders{
+			.order-actions{
+				a{
+					height:30px;
+					line-height:30px;
+					padding:0 15px;
+				}
+			}
+		}
+	}
+}
+
+// Respnsive
+@media(max-width:@responsive-breakpoint2){
+	.woocommerce-account{
+		table.my_account_orders{
+			border:1px solid #e4e4e4;
+		}
+	}
+}
+
+@media(max-width:@responsive-breakpoint3){
+	.woocommerce-account{
+		table.order_details{
+			display:block;
+			border:none;
+
+			thead{
+				display:none;
+			}
+
+			tbody{
+				display:block;
+				border:@shop-table-border;
+				border-bottom:none;
+
+				tr,
+				td,
+				th{
+					display:block;
+				}
+
+				td,
+				th{
+					border-bottom:none !important;
+				}
+
+				td{
+					padding:0 10px;
+				}
+
+				th{
+					padding:0 10px 10px;
+				}
+
+				tr{
+					padding:10px 0;
+					border-bottom:@shop-table-border;
+				}
+			}
+
+			tfoot{
+				display:block;
+				.mix-margin-top();
+				border:@shop-table-border;
+				border-bottom:0;
+
+				td,
+				th{
+					display:inline-block;
+					padding:10px;
+					border:none !important;
+				}
+
+				tr{
+					display:block;
+					border-bottom:@shop-table-border;
+				}
+			}
+
+			.account-order-datais-responsive-title{
+				display:inline-block;
+			}
+		}
+
+		&.woocommerce-edit-account,
+		&.woocommerce-edit-address{
+			.myaccount-box{
+				.form-row-first,
+				.form-row-last{
+					display:block;
+					width:100%;
+					float:none;
+				}
+			}
+		}
+	}
+}

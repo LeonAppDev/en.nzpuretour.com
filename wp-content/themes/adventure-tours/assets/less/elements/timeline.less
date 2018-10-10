@@ -1,0 +1,154 @@
+.timeline{
+	&__item{
+		display:table;
+		width:100%;
+		margin-bottom:2px;
+
+		&:last-child{
+			.timeline{
+				&__item{
+					&__content{
+						padding-bottom:0 !important;
+					}
+
+					&__description{
+						margin-bottom:-7px;
+					}
+
+					&__icon-wrap{
+						&:before{
+							display:none;
+						}
+					}
+				}
+			}
+		}
+
+		&__icon-wrap{
+			display:table-cell;
+			vertical-align:top;
+			width:70px;
+			position:relative;
+			overflow:hidden;
+
+			&:before{
+				content:" ";
+				display:block;
+				.border-left(4px dotted @main-color1);
+				height:100%;
+				position:absolute;
+				top:0;
+				.left(50%);
+				.translate(-50%, 0);
+				z-index:1;
+			}
+		}
+
+		&__icon{
+			display:inline-block;
+			width:70px;
+			height:70px;
+			line-height:70px;
+			background:@main-color1;
+			border-radius:100%;
+			text-align:center;
+			font-family:@subheading-font-family;
+			font-size:1.467em;
+			color:@main-color-white;
+			position:relative;
+			z-index:2;
+
+			&:before{
+				content:" ";
+				display:block;
+				width:60px;
+				height:60px;
+				background:transparent;
+				position:absolute;
+				top:5px;
+				.left(5px);
+				border-radius:100%;
+				border:3px solid fade(@main-color-white, 50%);
+			}
+
+			&__text{
+				display:inline-block;
+				margin-left:-3px;
+			}
+		}
+
+		&__content{
+			display:table-cell;
+			vertical-align:top;
+			padding-bottom:10px;
+		}
+
+		&__title{
+			margin:20px 0 !important;
+			.mix-alternative-text();
+			font-size:1.467em;
+		}
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint3){
+	.timeline{
+		&__item{
+			margin-bottom:0;
+
+			&__icon{
+				width:60px;
+				height:60px;
+				line-height:60px;
+
+				&:before{
+					width:50px;
+					height:50px;
+				}
+
+				&-wrap{
+					&:before{
+						.border-left(3px dotted @main-color1);
+						.margin-left(-6px); // because transform works once for desctop mode
+					}
+				}
+			}
+
+			&__title{
+				margin-top:10px !important;
+			}
+
+			&__content{
+				.padding-left(15px);
+			}
+		}
+	}
+}
+
+@media(max-width:450px){
+	.timeline{
+		&__item{
+			display:block;
+			.mix-margin-bottom();
+			overflow:hidden;
+
+			&__icon{
+				&-wrap{
+					display:block;
+					.margin(0, 10px, 10px, 0);
+					.float(left);
+
+					&:before{
+						display:none;
+					}
+				}
+			}
+
+			&__content{
+				display:block;
+				.padding-left(0);
+			}
+		}
+	}
+}

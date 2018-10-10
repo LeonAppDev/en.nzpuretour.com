@@ -1,0 +1,55 @@
+.vc_tta.vc_tta-accordion.vc_tta-style-classic{
+	.vc_tta-panels-container{
+		.vc_tta-panels{
+			.vc_tta-panel{
+				margin-bottom:5px;
+				box-shadow:@main-box-shadow;
+				border-radius:@main-border-radius;
+
+				&-heading{
+					border:none;
+					background:@main-color-white;
+					text-transform:uppercase;
+					font-size:0.933em;
+					border-radius:@main-border-radius !important;
+
+					&:hover{
+						background:@main-color-white;
+					}
+
+					a{
+						display:block;
+						height:50px;
+						line-height:51px;
+						padding:0 30px;
+						color:@main-text-color;
+					}
+
+					.vc_tta-controls-icon{
+						display:none;
+					}
+				}
+
+				&-body{
+					padding:30px;
+					border:none;
+					background:@main-color-white;
+				}
+
+				&.vc_active{
+					.vc_tta-panel{
+						&-heading{
+							background:@main-color1;
+							border-bottom-left-radius:0 !important;
+							border-bottom-right-radius:0 !important;
+
+							a{
+								color:@main-color-white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

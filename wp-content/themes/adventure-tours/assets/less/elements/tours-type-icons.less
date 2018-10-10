@@ -1,0 +1,150 @@
+@__item-color:rgba(255, 255, 255, 0.85);
+
+.tours-type-icons{
+	position:relative;
+	.mix-outside-of-container();
+	overflow:hidden;
+
+	&__bg{
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:50%;
+		.left(50%);
+		.translate(-50%, -50%);
+		z-index: -2;
+	}
+
+	&__shadow{
+		.mix-shadow(@header-bg, 0.7, 0);
+	}
+
+	&__content{
+		position:relative;
+		z-index:1;
+	}
+
+	&__item{
+		&__container{
+			display:block;
+			width:195px;
+			height:195px;
+			margin:0 auto;
+			position:relative;
+			border:3px solid @__item-color;
+			border-radius:100%;
+			.mix-transition();
+
+			&:hover{
+				background:@__item-color;
+				text-decoration:none;
+				border:3px solid @__item-color;
+
+				.tours-type-icons{
+					&__item{
+						&__content{
+							color:@header-bg;
+						}
+					}
+				}
+			}
+		}
+
+		&__content{
+			position:absolute;
+			top:50%;
+			.left(50%);
+			.translate(-50%, -50%);
+			text-align:center;
+			color:@main-color-white;
+			font-size:1.200em;
+			.mix-alternative-text();
+			text-transform:uppercase;
+			.mix-transition();
+
+			i{
+				display:block;
+				margin-bottom:25px;
+				font-size:3.611em;
+			}
+		}
+	}
+
+	&__slider{
+		position:relative;
+
+		&__prev, &__next{
+			position:absolute;
+			top:50%;
+			.translate(0, -50%);
+			.mix-transition();
+			color:fade(@main-color-white, 60%);
+			font-size:1.600em;
+			border-bottom:none;
+
+			&:hover{
+				color:fade(@main-color-white, 80%);
+				border-bottom:none;
+			}
+
+			&:focus{
+				color:@main-color-white;
+			}
+		}
+
+		&__prev{
+			.left(-35px);
+		}
+
+		&__next{
+			.right(-35px);
+		}
+	}
+
+	// Responsive
+	@media(max-width:1200px){
+		&__slider{
+			padding:0 40px;
+
+			&__prev{
+				.left(0);
+			}
+
+			&__next{
+				.right(0);
+			}
+		}
+
+		&__item{
+			&__container{
+				width:145px;
+				height:145px;
+			}
+
+			&__content{
+				font-size:1.1em;
+				line-height:1.4em;
+				i {
+					font-size:3em;
+					margin-bottom:15px;
+				}
+			}
+		}
+	}
+	@media(max-width:992px){
+		&__item{
+			&__container{
+				width:105px;
+				height:105px;
+			}
+
+			&__content{
+				font-size:0.8em;
+				i {
+					margin-bottom:10px;
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,83 @@
+.select2-results .select2-highlighted{
+	color:#000;
+}
+
+/* tours booking management tab [start] */
+.tour-booking-row__date-wrapper{
+	float: left;
+	width:50%;
+	min-width:90px;
+	max-width:110px;
+}
+.tour-booking-row__days{
+	padding-top:10px;
+	overflow:hidden;
+}
+.tour-booking-row__days__column{
+	float: left;
+	min-width:110px;
+}
+.tour-booking-row__cell--next-row{
+	padding-top:10px;
+}
+.tour-booking-row__actions-cnt{
+	text-align: right;
+}
+.tour-booking-row__remove-btn:before{
+	content: 'X';
+	font-weight:bold;
+	margin:0;
+}
+.tour-booking-row__remove-btn,
+.tour-booking-row__remove-btn:hover,
+.tour-booking-row__remove-btn:visited{
+	color:#EE0000;
+	padding:0 5px;
+	border:1px solid #EE0000;
+	border-radius:20px;
+}
+
+.tour-booking-row__exact-date-row{
+	display:block;
+	overflow:hidden;
+	padding-bottom:10px;
+}
+	.tour-booking-row__exact-date-row__actions-box{
+		float:left;
+		padding:5px 0 0 5px;
+	}
+	.tour-booking-row__exact-date-row__date-field{
+		max-width:105px;
+	}
+
+.tour-booking-row__time-row{
+	display:block;
+	overflow:hidden;
+	padding-bottom:10px;
+}
+	.tour-booking-row__time-row__actions-box{
+		float:left;
+		padding:5px 0 0 5px;
+	}
+	.tour-booking-row__time-row__time-field{
+		max-width:80px;
+	}
+
+
+.field-error-msg{
+	color:#ee0000;
+}
+
+.tour-booking-preview-calendar{
+	margin-bottom:10px
+}
+
+#tour_booking_rows_cont > tr:not(:last-child) > td{
+	border-bottom:1px solid #EEE;
+}
+/* tours booking management tab [end] */
+
+.tour-booking-tr-lock-notice{
+	padding:10px;
+	text-align:center;
+}

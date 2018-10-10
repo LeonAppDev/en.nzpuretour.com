@@ -1,0 +1,165 @@
+.woocommerce{
+	.tours-tabs{
+		&__content{
+			h2{
+				margin:0;
+				margin-bottom:30px;
+				font-size:1.467em;
+			}
+		}
+	}
+
+	// Attributes
+	table.shop_attributes{
+		margin:0;
+		margin-bottom:15px;
+		border-top:2px solid @shop-table-border-color;
+		.text-align(left);
+		.mix-responsive-table();
+
+		th,
+		td{
+			padding:15px 20px;
+			border:none;
+
+			p{
+				padding:0;
+			}
+		}
+
+		th{
+			.padding-right(0);
+			text-transform:uppercase;
+		}
+
+		td{
+			font-style:normal;
+		}
+
+		.alt{
+			td,
+			th{
+				background:transparent;
+			}
+		}
+
+		tr{
+			border-bottom:@shop-table-border;
+
+			&:last-child{
+				border-bottom:2px solid @shop-table-border-color;
+			}
+		}
+	}
+
+	// Reviews
+	.star-rating{
+		color:@rating-color;
+	}
+
+	.stars{
+		a{
+			color:@rating-color;
+
+			&:after{
+				font-family:FontAwesome !important;
+			}
+
+			&.star-1{
+				&:after{
+					content:"\f006" !important;
+				}
+
+				&.active,
+				&:hover{
+					&:after{
+						content:"\f005" !important;
+					}
+				}
+			}
+
+			&.star-2{
+				&:after{
+					content:"\f006\f006" !important;
+				}
+
+				&.active,
+				&:hover{
+					&:after{
+						content:"\f005\f005" !important;
+					}
+				}
+			}
+
+			&.star-3{
+				&:after{
+					content:"\f006\f006\f006" !important;
+				}
+
+				&.active,
+				&:hover{
+					&:after{
+						content:"\f005\f005\f005" !important;
+					}
+				}
+			}
+
+			&.star-4{
+				&:after{
+					content:"\f006\f006\f006\f006" !important;
+				}
+
+				&.active,
+				&:hover{
+					&:after{
+						content:"\f005\f005\f005\f005" !important;
+					}
+				}
+			}
+
+			&.star-5{
+				&:after{
+					content:"\f006\f006\f006\f006\f006" !important;
+				}
+
+				&.active,
+				&:hover{
+					&:after{
+						content:"\f005\f005\f005\f005\f005" !important;
+					}
+				}
+			}
+		}
+	}
+
+	#respond input#submit{
+		height:45px;
+		line-height:45px;
+		padding:0 30px;
+		color:@main-color-white;
+		font-size:1em;
+		background:fade(@main-color1, 80%);
+		.mix-transition();
+
+		&:hover{
+			color:@main-color-white;
+			background:fade(@main-color1, 100%);
+		}
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint2){
+	.woocommerce{
+		table.shop_attributes{
+			th{
+				width:100%;
+				padding-bottom:5px;
+			}
+
+			td{
+				padding-top:0;
+			}
+		}
+	}
+}

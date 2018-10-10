@@ -1,0 +1,2 @@
+[12-Dec-2017 04:34:21 Asia/Hong_Kong] PHP Fatal error:  Call to undefined function get_header() in /home/nzpureto/nzpuretour.com/en/wp-content/themes/twentyseventeen/404.php on line 13
+[17-Jan-2018 00:42:17 Asia/Hong_Kong] PHP Fatal error:  Call to undefined function get_header() in /home/nzpureto/nzpuretour.com/en/wp-content/themes/twentyseventeen/404.php on line 13

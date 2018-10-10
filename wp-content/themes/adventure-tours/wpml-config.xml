@@ -1,0 +1,22 @@
+<wpml-config>
+	<custom-fields>
+		<custom-field action="copy">tour_booking_periods</custom-field>
+		<custom-field action="copy">_variable_tour</custom-field>
+	</custom-fields>
+	<admin-texts>
+		<key name="adventure_tours_theme_options">
+			<key name="banner_default_subtitle" />
+			<key name="contact_phone" />
+			<key name="contact_time" />
+			<key name="footer_text_note" />
+			<key name="tour_badge_1_title" />
+			<key name="tour_badge_2_title" />
+			<key name="tour_badge_3_title" />
+			<key name="tours_search_form_title" />
+			<key name="tours_search_form_note" />
+			<key name="excerpt_text" />
+			<key name="faq_show_question_form" />
+			<key name="tours_page" />
+		</key>
+	</admin-texts>
+</wpml-config>

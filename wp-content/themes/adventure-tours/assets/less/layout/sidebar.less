@@ -1,0 +1,41 @@
+.sidebar{
+	.widget{
+		padding:@widget-padding;
+		.mix-layout-box();
+
+		&__title{
+			opacity:1;
+			margin:-15px -@widget-padding 20px;
+			padding:0 10px 10px;
+			font-size:1.200em;
+			position:relative;
+			text-align:center;
+			text-transform:uppercase;
+			color:@main-text-color;
+			border-bottom:@section-delimiter;
+
+			&:after{
+				.mix-title-decoration();
+			}
+
+			a{
+				color:inherit;
+			}
+		}
+	}
+
+	.widget-atgrid-without-title{
+		.widget{
+			padding:0;
+			background:transparent;
+			box-shadow:none;
+		}
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint1){
+	.sidebar{
+		.mix-margin-top();
+	}
+}

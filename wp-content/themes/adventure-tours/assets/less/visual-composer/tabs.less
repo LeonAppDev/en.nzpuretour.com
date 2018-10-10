@@ -1,0 +1,139 @@
+.vc_tta.vc_tta-tabs.vc_tta-style-classic{
+	.vc_tta-panels-container{
+		box-shadow:@main-box-shadow;
+
+		.vc_tta-panels{
+			border:none;
+			border-radius:0;
+
+			.vc_tta-panel-body{
+				.mix-padding-all();
+				border:none;
+				background:@main-color-white;
+				border-radius:0;
+			}
+		}
+	}
+
+	.vc_tta-tabs-container{
+		margin:0;
+
+		.vc_tta-tabs-list .vc_tta-tab.vc_active > a{
+			&:before,
+			&:after{
+				display:none;
+			}
+		}
+	}
+
+	.vc_tta-tabs-list{
+		margin:0;
+
+		.vc_tta-tab{
+			& > a{
+				height:50px;
+				line-height:51px;
+				padding:0 35px;
+				border:none;
+				color:@main-text-color;
+				font-size:0.933em;
+				text-transform:uppercase;
+				background:@main-color-white;
+				.mix-alternative-text();
+				box-shadow:@main-box-shadow;
+			}
+
+			&.vc_active{
+				a{
+					background:@main-color1;
+					color:@main-color-white;
+				}
+			}
+		}
+	}
+
+	&.vc_tta-tabs-position-top{
+		.vc_tta-tabs-list{
+			border-bottom:3px solid @main-color1;
+
+			.vc_tta-tab{
+				margin:0 8px 0 0;
+
+				&:last-child{
+					margin-right:0;
+				}
+
+				& > a{
+					border-radius:@main-border-radius @main-border-radius 0 0;
+				}
+
+				&.vc_active{
+					a{
+						height:53px;
+						line-height:57px;
+					}
+				}
+			}
+		}
+	}
+
+	&.vc_tta-tabs-position-left{
+		.vc_tta-tabs-list{
+			border-right:3px solid @main-color1;
+
+			.vc_tta-tab{
+				margin:0 0 8px 3px;
+
+				&:last-child{
+					margin-bottom:0;
+				}
+
+				&.vc_active{
+					margin-left:0;
+				}
+			}
+		}
+	}
+}
+
+// Responsive
+
+@media(max-width:@responsive-breakpoint2){
+	.vc_tta.vc_tta-tabs.vc_tta-style-classic .vc_tta-panels-container{
+		box-shadow:none;
+
+		.vc_tta-panels{
+			.vc_tta-panel{
+				margin-bottom:8px;
+				box-shadow:@main-box-shadow;
+				border-radius:@main-border-radius;
+
+				.vc_tta-panel-heading{
+					border:none;
+					margin:0;
+
+					a{
+						display:block;
+						height:50px;
+						line-height:51px;
+						padding:0 30px;
+						background:@main-color-white;
+						color:@main-text-color;
+						font-size:0.933em;
+						text-transform:uppercase;
+						border-radius:@main-border-radius;
+					}
+				}
+
+				&.vc_active{
+					.vc_tta-panel-heading a{
+						background:@main-color1;
+						color:@main-color-white;
+						border-bottom-left-radius:0;
+						border-bottom-right-radius:0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,122 @@
+@__button-color:#eb5ea2;
+
+.gift-cart{
+	.mix-outside-of-container();
+	background:url("@{assetsUrl}images/gift-pattern.png") #fa64ac;
+	color:@main-color-white;
+
+	&__box{
+		position:relative;
+		padding:80px;
+		.padding-left(240px);
+	}
+
+	&__bow{
+		width:12px;
+		height:100%;
+		position:absolute;
+		top:0;
+		.left(150px);
+		background:@main-color-white;
+
+		&:after{
+			content:" ";
+			display:block;
+			width:88px;
+			height:67px;
+			position:absolute;
+			top:50%;
+			.left(50%);
+			.translate(-50%, -50%);
+			background:url("@{assetsUrl}images/bow.png") no-repeat;
+		}
+	}
+
+	&__title{
+		margin:0;
+		margin-bottom:15px;
+		font-family:@subheading-font-family;
+		font-size:1.600em;
+		font-weight:normal;
+	}
+
+	&__description{
+		font-size:1.200em;
+	}
+
+	&__button{
+		display:inline-block;
+		margin-top:20px;
+		padding:0 50px;
+		line-height:50px;
+		background:@main-color-white;
+		border:none;
+		border-radius:50px;
+		color:@__button-color;
+		.mix-alternative-text();
+		font-size:1.067em;
+		text-transform:uppercase;
+
+		&:hover{
+			color:@__button-color;
+			text-decoration:none;
+		}
+	}
+
+	&--button{
+		.gift-cart{
+			&__box{
+				.padding-right(350px);
+			}
+
+			&__button{
+				margin:0;
+				position:absolute;
+				top:50%;
+				.right(120px);
+				.translate(0, -50%);
+				border-bottom:none;
+			}
+		}
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint1){
+	.gift-cart{
+		&__box{
+			.padding-right(60px !important);
+			.padding-left(150px !important);
+		}
+
+		&__button{
+			margin-top:20px !important;
+			position:static !important;
+			transform:none !important;
+		}
+
+		&__bow{
+			.left(60px !important);
+		}
+	}
+}
+
+@media(max-width:@responsive-breakpoint3){
+	.gift-cart{
+		&__box{
+			.padding-right(@layout-indent-small !important);
+			padding-top:@layout-indent-small !important;
+			padding-bottom:@layout-indent-small !important;
+			.padding-left(95px !important);
+		}
+
+		&__button{
+			line-height:30px;
+			padding:0 30px;
+		}
+
+		&__bow{
+			.left(40px !important);
+		}
+	}
+}

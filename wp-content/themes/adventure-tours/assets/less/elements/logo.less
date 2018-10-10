@@ -1,0 +1,55 @@
+.logo{
+	.float(left);
+	&--image{
+		line-height:normal;
+	}
+
+	a{
+		display:block;
+		color:@header-text-color;
+		font-family:@subheading-font-family;
+		font-size:1.267em;
+	}
+}
+
+#logoLink {
+	img{
+		max-height:@header__content-height;
+		max-width:300px;
+	}
+
+	#retinaImageLogo{
+		display:none;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+	(min--moz-device-pixel-ratio: 2),
+	(-o-min-device-pixel-ratio: 2/1),
+	(min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+
+	#logoLink #retinaImageLogo{
+		display:inline;
+		max-width:50%;
+	}
+
+	#logoLink #normalImageLogo{
+		display:none;
+	}
+}
+
+@media(max-width:392px){
+	#logoLink{
+		img, #retinaImageLogo{
+			max-width:220px;
+		}
+	}
+}
+
+@media(max-width:@responsive-breakpoint2){
+	.logo{
+		float:none;
+	}
+}

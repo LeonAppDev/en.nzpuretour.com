@@ -1,0 +1,101 @@
+.social-icons{
+	&__title{
+		font-size:1.333em;
+		.mix-alternative-text();
+	}
+
+	&__icon{
+		display:inline-block;
+		width:50px;
+		height:50px;
+		margin-top:25px;
+		.margin-right(10px);
+		position:relative;
+		border-radius:100%;
+		color:@main-color-white;
+		font-size:1.467em;
+		background:@main-color1;
+		border-bottom:none !important;
+		opacity:0.8;
+		.mix-transition();
+
+		&:hover{
+			color:@main-color-white;
+			opacity:1;
+		}
+
+		&:focus{
+			color:@main-color-white;
+			outline:0;
+		}
+
+		&:last-child{
+			.margin-right(0);
+		}
+
+		&--facebook{
+			background:#3b5998;
+		}
+
+		&--twitter{
+			background:#00acee;
+		}
+
+		&--google{
+			background:#dd4b39;
+		}
+
+		&--pinterest{
+			background:#c8232c;
+		}
+
+		&--linkedin{
+			background:#0e76a8;
+		}
+
+		&--instagram{
+			background:#3F729B;
+		}
+
+		&--dribbble{
+			background:#ea4c89;
+		}
+
+		&--tumblr{
+			background:#5EAB1F;
+		}
+
+		&--vk{
+			background:#597DA3;
+		}
+		&--tripadvisor{
+			background:#53953D;
+		}
+
+		i{
+			position:absolute;
+			top:50%;
+			.left(50%);
+			.translate(-50%, -50%);
+		}
+	}
+
+	&--square{
+		.social-icons{
+			&__title{
+				font-size:1.200em;
+				.mix-alternative-text();
+				text-transform:uppercase;
+			}
+
+			&__icon{
+				width:40px;
+				height:40px;
+				margin-top:15px;
+				border-radius:@main-border-radius;
+				font-size:1.333em;
+				border-bottom:none;
+			}
+		}
+	}
+}

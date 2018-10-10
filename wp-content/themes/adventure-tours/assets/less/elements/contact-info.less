@@ -1,0 +1,46 @@
+.contact-info{
+	&__item{
+		display:table;
+		width:100%;
+		margin-bottom:6px;
+
+		&:last-child{
+			margin-bottom:0;
+		}
+
+		&__icon{
+			display:table-cell;
+			width:25px;
+
+			i{
+				width:1.667em;
+				height:1.667em;
+				line-height:1.667em;
+				.margin-right(10px);
+				background:@main-color1;
+				color:@main-color-white;
+				border-radius:100%;
+				text-align:center;
+			}
+
+			&__mobile{
+				&:before{
+					font-size:1.333em;
+				}
+			}
+
+			&__email{
+				&:before{
+					font-size:0.867em;
+					vertical-align:top;
+				}
+			}
+		}
+
+		&__text{
+			display:table-cell;
+			vertical-align:top;
+			.mix-alternative-text();
+		}
+	}
+}

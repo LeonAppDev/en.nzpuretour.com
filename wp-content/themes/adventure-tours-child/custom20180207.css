@@ -1,0 +1,106 @@
+.avtivity_img_featured img{
+       width: auto !important;
+}
+.blockquote_activity{
+    margin: 20px 0 20px 0px;
+}
+.atbtn-total:hover{
+color:#000;
+}
+.atbtn-total{
+margin-right: 20px;color: #000;width: 150px;
+}
+.form-contact__fields-short{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.gallery__item__checkbox{
+      display: block;
+    width: 90%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 2;
+    overflow: hidden;
+    line-height: 22px;
+    vertical-align: middle;
+
+}
+
+.gallery__item__checkbox input{
+    position: relative;
+    vertical-align: middle;
+}
+.act_select_box_gallery{
+   -ms-transform: scale(2);
+   -moz-transform: scale(2);
+   -webkit-transform: scale(2);
+   -o-transform: scale(2);
+   padding: 10px;
+}
+.activity-container .tooltip{
+   width: 400px !important;
+}
+.activity-container .tooltip-inner{
+   max-width: 400px;
+   width: 400px !important;
+}
+.woocommerce-cart .woocommerce .padding-all{
+   padding-right: 20px;
+   padding-left: 20px;
+}
+.woocommerce table.shop_table th, .woocommerce table.shop_table td{
+   padding: 10px 10px;
+}
+.cart_item .product-quantity .quantity{
+       float: left;
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
+       width: 68%;
+}
+.woocommerce .cart-collaterals .cart_totals .checkout-button,
+.woocommerce-page .woocommerce a.button:hover, .woocommerce-page .woocommerce .button:hover{
+       max-width: 300px;
+        float: right;
+
+}
+.cart_notice_nzd{
+   color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+        padding: 0 10px;
+}
+
+img#fsb_image {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+}
+
+
+
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+	img#fsb_image {
+		left: 50%;
+		margin-left: -512px;   /* 50% */
+	}
+}

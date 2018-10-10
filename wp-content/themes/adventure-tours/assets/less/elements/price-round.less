@@ -1,0 +1,67 @@
+.price-round{
+	display:block;
+	width:75px;
+	height:75px;
+	position:absolute;
+	top:15px;
+	.right(20px);
+	border-radius:100%;
+	text-align:center;
+	.mix-alternative-text();
+	overflow:hidden;
+	border-bottom:none;
+	background:url("@{assetsUrl}images/price-bubble.png") no-repeat bottom right @main-color2;
+	background-size:contain;
+
+	&:hover{
+		color:@main-color-white;
+		text-decoration:none;
+		border-bottom:none;
+	}
+
+	&__content{
+		display:table;
+		line-height:20px;
+		color:@main-color-white;
+		font-size:1.333em;
+		position:absolute;
+		top:50%;
+		.left(50%);
+		.translate(-50%, -50%);
+
+		del{
+			display:table-footer-group;
+		}
+
+		ins{
+			display:table-header-group;
+		}
+	}
+
+	&__value,
+	ins{
+		dispaly:block;
+		text-decoration:none;
+	}
+
+	&__label,
+	del{
+		display:block;
+		font-size:0.600em;
+	}
+
+	@media(max-width:@responsive-atgrid-short-view-breakpoint) and (min-width: 992px){
+		& {
+			//zoom:0.8;
+			width:60px;
+			height:60px;
+
+			&__content{
+				font-size:1.0664em;
+			}
+			del{
+				font-size:0.48em;
+			}
+		}
+	}
+}

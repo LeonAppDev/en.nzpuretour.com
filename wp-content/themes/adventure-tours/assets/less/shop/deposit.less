@@ -1,0 +1,58 @@
+.form-block--tour-booking{
+	.wc-deposits-wrapper{
+		margin:0 0 15px;
+		padding:15px;
+		.text-align(left);
+		color:inherit;
+		background:fade(@main-color-white, 70%);
+		border-radius: @main-border-radius;
+
+		.wc-deposits-option,
+		.wc-deposits-payment-plans{
+			padding:0;
+			margin:0;
+			line-height:normal;
+			border:none;
+			box-shadow:none;
+
+			li{
+				width:100%;
+				padding:0;
+				float:none;
+				border:none;
+				box-shadow:none;
+
+				input{
+					width:auto;
+					margin:0 10px 0 0;
+					.margin(0, 10px, 0, 0);
+				}
+
+				label{
+					font-size:0.933em;
+					opacity:0.7;
+				}
+			}
+		}
+
+		.wc-deposits-payment-plans{
+			li{
+				margin-bottom:10px;
+
+				&:last-child{
+					margin-bottom:0;
+				}
+			}
+		}
+
+		&.wc-deposits-optional .wc-deposits-payment-plans{
+			margin-top: 20px;
+		}
+
+		.wc-deposits-payment-description{
+			margin:10px 0 0 0;
+			color:inherit;
+			line-height:normal;
+		}
+	}
+}

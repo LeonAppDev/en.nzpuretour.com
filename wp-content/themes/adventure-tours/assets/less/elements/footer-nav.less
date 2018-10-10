@@ -1,0 +1,74 @@
+.footer-nav{
+	.text-align(right);
+
+	ul{
+		display:block;
+		margin:0;
+		padding:0;
+
+		& > li{
+			display:inline-block;
+			position:relative;
+
+			a{
+				color:inherit;
+				border-bottom:none;
+
+				&:hover{
+					color:@footer-links-color;
+				}
+
+				img{
+					vertical-align:middle; // for wpml language switcher
+				}
+			}
+
+			&:hover{
+				.sub-menu{
+					display:block;
+				}
+			}
+
+			.sub-menu{
+				display:none;
+				width:100px;
+				position:absolute;
+				top:0;
+				.right(0);
+				.translate(0, -100%);
+				background:@footer-bg;
+				border-radius:@main-border-radius;
+
+				li{
+					display:inline-block;
+					width:100%;
+					margin:0;
+					padding:10px;
+					border-bottom:1px solid fade(@footer-text-color, 20%);
+					.text-align(left);
+
+					&:last-child{
+						border-bottom:none;
+					}
+				}
+
+				a{
+					display:inline-block;
+					width:100%;
+				}
+			}
+		}
+
+		li + li{
+			.margin-left(20px);
+		}
+	}
+
+	@media(max-width:@responsive-breakpoint1){
+		.text-align(left);
+
+		ul{
+			margin-top: 20px;
+		}
+	}
+}

@@ -1,0 +1,138 @@
+@__border-style:1px solid #ccc;
+
+.bootstrap-select{
+	width:100% !important;
+
+	&:focus{
+		outline:0 !important;
+	}
+
+	button{
+		&.btn{
+			.padding-right(35px);
+
+			&:focus{
+				outline:0 !important;
+			}
+
+			.caret{
+				.right(20px !important);
+				.right-reset(yes);
+			}
+		}
+
+		&.selectpicker--empty{
+			color:#c4c4c4;
+		}
+	}
+
+	&.btn-group{
+		.btn{
+			.filter-option{
+				.text-align(left);
+			}
+		}
+	}
+
+	.btn-default{
+		height:45px;
+		line-height:45px;
+		padding:0 15px;
+		background:fade(@main-color-white, 90%);
+
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active 
+		&.active{
+			border:@__border-style;
+			outline:0 !important;
+			box-shadow:none;
+			z-index:auto;
+		}
+	}
+
+	&.open{
+		.btn-default{
+			background:fade(@main-color-white, 100%);
+			outline:0 !important;
+			box-shadow:none;
+			border:@__border-style !important;
+		}
+	}
+
+	div.dropdown-menu{
+		padding:0;
+	}
+
+	ul.dropdown-menu{
+		padding:0 !important;
+		box-shadow:none !important;
+		border-radius:@main-border-radius !important;
+		border:none !important;
+
+		&.inner{
+			// border:@__border-style !important;
+			padding:15px 0 !important;
+		}
+
+		li{
+			margin-bottom:0 !important;
+			padding-bottom:0 !important;
+			border-bottom:none !important;
+
+			&:focus{
+				outline:0;
+			}
+
+			a{
+				height:30px;
+				line-height:30px;
+				padding:0 20px;
+				color:@main-text-color;
+				.text-align(left);
+
+				&:hover{
+					background:none;
+					color: @links-color;
+				}
+
+				&:focus,
+				&:active{
+					background:@main-color-white;
+				}
+				
+			}
+		}
+	}
+
+	// live search for search form select
+	.bs-searchbox{
+		.input-block-level{
+			height:30px;
+			border:1px solid #ebebeb;
+			padding:15px 12px !important;
+		}
+
+		& + ul.dropdown-menu.inner{
+			padding-top:0 !important;
+			border-radius:0 !important;
+
+			.no-results{
+				margin:0;
+				padding:0 20px;
+				background:#ebebeb;
+			}
+
+			& > .active > a{
+				background:fade(@main-color1, 80%);
+				color:@main-color-white;
+
+				&:hover{
+					background:none;
+					color:@links-color;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.parallax{
+	&-section{
+		position:relative;
+		overflow:hidden;
+		z-index:1;
+
+		&--header{
+			height:400px;
+		}
+	}
+
+	&-image{
+		width:100%;
+		background-attachment:fixed;
+		position:absolute;
+		top:0;
+		.left(0);
+		.right(0);
+		bottom:0;
+		z-index:-3;
+	}
+}
+
+.tour-single{
+	.parallax{
+		&-section{
+			&--header{
+				height:600px;
+			}
+		}
+	}
+}

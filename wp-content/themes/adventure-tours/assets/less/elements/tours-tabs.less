@@ -1,0 +1,306 @@
+@__tabs-height:50px;
+@__tabs-height-offset:3px;
+@__tabs-info-border:1px solid #ebebeb;
+
+.tours-tabs{
+	.nav-tabs{
+		margin:0;
+		border-bottom:3px solid @main-color1;
+
+		li{
+			margin-bottom:0;
+			.margin-right(8px);
+			box-shadow:@main-box-shadow;
+
+			&:last-child{
+				.margin-right(0);
+			}
+
+			a{
+				height:@__tabs-height;
+				// 1px fix for chrome
+				line-height:@__tabs-height + 1;
+				margin:0;
+				padding:0 35px;
+				color:@main-text-color;
+				font-size:0.933em;
+				.mix-alternative-text();
+				text-transform:uppercase;
+				border:none;
+				.border-radius(@main-border-radius, @main-border-radius, 0, 0);
+				background:@main-color-white;
+				.mix-transition(~"background 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out");
+
+				&:hover{
+					background:@main-color-white;
+				}
+			}
+
+			&.active{
+				box-shadow:none;
+
+				a{
+					height:@__tabs-height + @__tabs-height-offset;
+					// 1px fix for chrome
+					line-height:@__tabs-height + 1 + @__tabs-height-offset + @__tabs-height-offset;
+					margin-top:-@__tabs-height-offset;
+					border:none;
+					background:@main-color1;
+					color:@main-color-white;
+				}
+			}
+		}
+	}
+
+	.tab-content{
+		box-shadow:@main-box-shadow;
+		background:@main-color-white;
+		.border-radius(0, 0, @main-border-radius, @main-border-radius);
+	}
+
+	&__info{
+		display:table;
+		width:100%;
+		border-bottom:@__tabs-info-border;
+		background:#fdfdfd;
+
+		&__item{
+			display:table-cell;
+			height:120px;
+			padding:20px;
+			text-align:center;
+			vertical-align:middle;
+			.border-right(@__tabs-info-border);
+
+			&:last-child{
+				.border-right(none);
+			}
+
+			&__content{
+				display:inline-block;
+				.padding-left(50px);
+				position:relative;
+				.text-align(left);
+			}
+
+			&__icon{
+				position:absolute;
+				.left(0);
+				top:50%;
+				.translate(0, -50%);
+				font-size:30px;
+				color:@main-color1;
+			}
+
+			&__title{
+				.mix-alternative-text();
+				line-height:1.5em;
+			}
+
+			&__description{
+				font-size:0.933em;
+				color:#a1a1a1;
+			}
+		}
+	}
+
+	&__content{
+		p{
+			margin:0;
+			margin-bottom:15px;
+
+			&:last-child{
+				margin-bottom:0;
+			}
+		}
+	}
+
+	&__table{
+		width:100% !important;
+		height:auto !important;
+		margin:30px 0;
+		border:none;
+		border-top:2px solid #e4e4e4;
+		border-bottom:2px solid #e4e4e4;
+		font-size:0.933em;
+
+		table{
+			border:none;
+			width:100% !important;
+			height:auto !important;
+		}
+
+		thead{
+			tr{
+				border-bottom:1px solid #e4e4e4 !important;
+			}
+		}
+
+		tr{
+			border-bottom:1px solid #e4e4e4;
+
+			&:last-child{
+				border-bottom:none;
+			}
+		}
+
+		td, th{
+			padding:20px;
+			vertical-align:top;
+			border:none;
+		}
+
+		&__title{
+			.mix-alternative-text();
+			text-transform:uppercase;
+			white-space:nowrap;
+		}
+
+		table{
+			width:100%;
+
+			tr{
+				border:none;
+			}
+
+			td{
+				padding:0;
+			}
+		}
+	}
+
+	.tabs-accordion{
+		.panel{
+			margin-bottom:5px !important;
+			border-radius:@main-border-radius !important;
+			box-shadow:@main-box-shadow;
+
+			&:last-child{
+				margin-bottom:0;
+			}
+		}
+
+		.panel-heading{
+			border-radius:@main-border-radius;
+
+			.panel-title{
+				.border-radius(@main-border-radius, @main-border-radius, 0, 0);
+			}
+
+			a{
+				display:block;
+				height:50px;
+				line-height:51px;
+				padding:0 @layout-indent-small;
+				background:@main-color1;
+				border-bottom:none;
+				.border-radius(@main-border-radius, @main-border-radius, 0, 0);
+				color:@main-color-white;
+				font-size:0.933em;
+				text-transform:uppercase;
+				.mix-alternative-text();
+
+				&.collapsed{
+					background:@main-color-white;
+					color:@main-text-color;
+					border-radius:@main-border-radius;
+				}
+			}
+		}
+
+		.panel-body{
+			padding:0;
+		}
+	}
+
+
+	&--with-border{
+		&.tours-tabs{
+			.nav-tabs{
+				li{
+					box-shadow:none;
+
+					&.active{
+						a{
+							border:1px solid @main-color1;
+							border-bottom:none;
+						}
+					}
+
+					a{
+						border:1px solid #e9e9e9;
+						border-bottom:none;
+					}
+				}
+			}
+
+			.tab-content{
+				box-shadow:none;
+				border:1px solid #e9e9e9;
+			}
+		}
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint2){
+	.tours-tabs{
+		&__info{
+			&__item{
+				display:block;
+				.border-right(none);
+				border-bottom:@__tabs-info-border;
+				position:relative;
+
+				&:last-child{
+					border-bottom:none;
+				}
+
+				&__content{
+					position:absolute;
+					top:50%;
+					.left(50%);
+					.translate(-50%, -50%);
+				}
+			}
+		}
+
+		&__table{
+			display:block;
+
+			thead,
+			tbody,
+			tfoot,
+			tr,
+			td,
+			th{
+				display:block;
+			}
+
+			td,
+			th{
+				padding:0;
+			}
+
+			& > tr,
+			& > thead > tr,
+			& > tbody > tr,
+			& > tfoot > tr{
+				padding:20px;
+			}
+		}
+	}
+}
+
+@media(max-width:@responsive-breakpoint3){
+	.tours-tabs{
+		&__table{
+			& > tr,
+			& > thead > tr,
+			& > tbody > tr,
+			& > tfoot > tr{
+				padding:10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+.widget_yikes_easy_mc_widget{
+	.yikes-mailchimp-form-description{
+		display:none;
+	}
+
+	.edit-link{
+		display:none;
+	}
+
+	span.EMAIL-label{
+		display:none;
+	}
+
+	.yikes-easy-mc-form{
+		label{
+			margin:0;
+		}
+
+		input{
+			&[type="text"],
+			&[type="email"]{
+				height:45px;
+				line-height:45px;
+				margin:0;
+				padding:0 20px;
+				background-color:rgba(255,255,255,0.9);
+				background:fade(@main-color-white, 90%);
+				.mix-transition(@main-animation-forms);
+				border:none;
+				border-radius:@main-border-radius;
+				.mix-placeholder(@placeholder-color, normal 300 ~"0.933em/3.462em" @main-font-family);
+
+				&:focus{
+					background:@main-color-white;
+					outline:0;
+				}
+			}
+		}
+
+		.form-field-description{
+			display:none;
+		}
+
+		.yikes-easy-mc-submit-button{
+			height:45px;
+			line-height:45px;
+			margin:10px 0 0 !important;
+			padding:0 30px;
+			border:none;
+			border-radius:@main-border-radius;
+			color:@main-color-white;
+			text-transform:uppercase;
+			.mix-alternative-text();
+			background:fade(@main-color1, 80%);
+			.mix-transition();
+
+			&:hover{
+				background:fade(@main-color1, 100%);
+			}
+		}
+	}
+
+	.yikes-easy-mc-success-message{
+		margin:0 0 10px;
+		padding:0;
+		background:transparent;
+		color:fade(@main-color-white, 80%);
+	}
+
+	.yikes-easy-mc-error-message{
+		margin:0 0 10px;
+		padding:0;
+		background:transparent;
+		color:@warning-color;
+	}
+}
+
+.sidebar{
+	.widget_yikes_easy_mc_widget{
+		background:@header-bg;
+
+		.widget{
+			&__title{
+				color:fade(@main-color-white, 90%);
+				border-bottom-color:fade(@main-color-white, 15%);
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+#themeShortcodesDialogBody .help-note {
+	color: #888888;
+	display: block;
+	font-size: 11px;
+	padding: 5px;
+}
+
+#themeShortcodesDialogBody .buttons-toolbar {
+	overflow:hidden;
+	margin:25px 0 25px 10px;
+}
+
+#themeShortcodesDialogBody span.required{
+	color:#EE0000;
+}
+
+.theme-shortcodes-input.input-text, .theme-shortcodes-input.input-textarea{
+	width:99%;
+}
+
+.error-required .theme-shortcodes-input{
+	border-color:#EE0000;
+}
+
+.mce-widget button.sh-render-active{
+	background-color:#F4C5C5;
+}
+
+#TB_window {
+	z-index: 9995 !important;
+}
+#TB_overlay {
+	z-index: 9992 !important;
+}

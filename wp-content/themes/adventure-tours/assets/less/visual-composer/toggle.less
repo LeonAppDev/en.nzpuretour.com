@@ -1,0 +1,67 @@
+ .vc_toggle.vc_toggle_size_md.vc_toggle_default{
+	.vc_toggle_title{
+		position:relative;
+		min-height:50px;
+		line-height:50px;
+		padding:0;
+
+		& > h4{
+			display:block;
+			color:@main-text-color;
+			font-size:1.067em;
+			line-height:27px;
+			padding:10px 0 10px 60px;
+		}
+
+		.vc_toggle_icon{
+			display:inline-block;
+			width:50px;
+			height:50px;
+			margin:0;
+			border:none;
+			border-radius:100%;
+			background:@main-color1;
+
+			&:before{
+				content:"\f128";
+				height:auto;
+				width:auto;
+				color:#fff;
+				font-size:1.333em;
+				font-family:FontAwesome;
+				font-style:normal;
+				border:none;
+				background:none;
+			}
+
+			&:after{
+				width:43px;
+				height:43px;
+				border:2px dotted #fff;
+				border-radius:100%;
+				opacity:0.5;
+				background:none;
+			}
+		}
+	}
+
+	.vc_toggle_content{
+		margin:0;
+		padding-left:60px;
+	}
+
+	&.vc_toggle_active{
+		.vc_toggle_icon{
+			background:@main-color2;
+
+			&:before{
+				content:"\f129";
+				visibility:visible;
+			}
+
+			&:after{
+				visibility:visible;
+			}
+		}
+	}
+}

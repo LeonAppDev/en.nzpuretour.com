@@ -1,0 +1,23 @@
+.search{
+	&-result-block{
+		.mix-layout-box();
+		text-align:center;
+
+		&__title{
+			margin:0;
+			padding:50px 0;
+			font-size:1.867em;
+			line-height:1.2em;
+		}
+
+		&__link{
+			color:@main-text-color;
+			border-bottom:none;
+
+			&:hover{
+				.mix-title-hover();
+				border-bottom:none;
+			}
+		}
+	}
+}

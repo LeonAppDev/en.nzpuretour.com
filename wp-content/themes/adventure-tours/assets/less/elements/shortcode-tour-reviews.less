@@ -1,0 +1,71 @@
+.shortcode-tour-reviews{
+	&.section-white{
+		.mix-padding-top();
+		.mix-padding-bottom();
+	}
+
+	&__item{
+		margin-bottom:@layout-indent-small;
+		padding-bottom:@layout-indent-small;
+		overflow:hidden;
+		border-bottom:1px dashed #ececec;
+
+		&:last-child{
+			margin-bottom:0;
+			padding-bottom:0;
+			border-bottom:none;
+		}
+
+		&__info{
+			.float(left);
+			text-align:center;
+
+			img{
+				margin-bottom:20px;
+				border-radius:100%;
+				border:6px solid @main-color-white;
+				box-shadow:@main-box-shadow;
+			}
+
+			&__name{
+				font-family:@subheading-font-family;
+			}
+		}
+
+		&__content{
+			width:100%;
+			.padding-left(140px);
+		}
+
+		&__title{
+			margin:10px 0;
+			font-size:1.333em;
+			.mix-alternative-text();
+
+			a{
+				color:@main-text-color;
+				.mix-transition();
+				border-bottom:none;
+
+				&:hover{
+					.mix-title-hover();
+					text-decoration:none;
+				}
+			}
+		}
+
+		&__description{
+			color:#686868;
+		}
+
+		&__rating{
+			margin-top:10px;
+			color:@rating-color;
+			font-size:1.200em;
+
+			i{
+				.margin-right(5px);
+			}
+		}
+	}
+}

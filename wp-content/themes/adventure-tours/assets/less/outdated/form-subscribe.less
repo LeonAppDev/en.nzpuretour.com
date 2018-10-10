@@ -1,0 +1,173 @@
+.form-subscribe{
+	input{
+		height:50px;
+		line-height:50px;
+		margin:0;
+		border:none;
+
+		&[type="text"]{
+			display:inline-block;
+			width:320px;
+			padding:0 20px;
+			border-radius:0;
+			color:@main-text-color;
+		}
+
+		&[type="submit"]{
+			margin:0;
+			padding:0 30px;
+			color:@main-color-white;
+			font-size:0.934em;
+			border-radius:0;
+			text-transform:uppercase;
+			border:none;
+			white-space:nowrap;
+			background:@main-color3;
+			.mix-alternative-text();
+		}
+
+		.mix-placeholder(@placeholder-color, normal 300 ~"1em/3.333em" @main-font-family);
+	}
+
+	.yks-mailchimpFormDiv{
+		display:inline-block;
+		border:10px solid rgba(255,255,255,0.2);
+		border-radius:@main-border-radius;
+	}
+
+	.yks-mailchimpFormDivRow{
+		display:inline-block;
+		width:auto;
+		margin:0;
+		vertical-align:middle;
+	}
+
+	.yks-mc-label-email-address{
+		display:none;
+	}
+
+	.yks-mc-form-row-email-address{
+		width:auto;
+		.margin-right(-10px);
+	}
+
+	.yks-mailchimpFormDivSubmit{
+		margin:0;
+
+		p{
+			margin:0;
+		}
+	}
+
+	#yks_form_error_message{
+		display:block !important;
+		float:none;
+		text-align:center;
+
+		ul{
+			display:block;
+			max-width:none;
+			margin:0;
+			padding:0;
+			float:none;
+
+			li{
+				display:block;
+				width:100%;
+				float:none;
+				color:@main-color-white;
+				text-align:center;
+
+				&:before{
+					color:@main-color-white;
+				}
+			}
+		}
+	}
+
+	.yks-status,
+	#yks_form_error_message{
+		width:100%;
+		margin:0 !important;
+		padding:0;
+		position:absolute;
+		bottom:-50px;
+		font-size:0.867em;
+
+		.yks-success{
+			width:100%;
+			margin:0 !important;
+			padding:0;
+		}
+
+		.yks-success p,
+		.yks-error p{
+			margin:0 auto 10px;
+			color:@main-color-white;
+			.mix-alternative-text();
+		}
+	}
+
+	#yks_form_error_message{
+		bottom:-65px;
+		.mix-alternative-text();
+	}
+
+	.yks-mc-submit-preloader{
+		display:none;
+	}
+
+	.yks-mailchimpFormDivRowField{
+		position:relative;
+	}
+
+	.yks-mailchimpFormContainer{
+		position:relative;
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint2){
+	.form-subscribe{
+		input{
+			&[type="text"]{
+				width:300px;
+			}
+		}
+
+		.yks-status,
+		#yks_form_error_message{
+			position:static;
+		}
+
+		#yks_form_error_message{
+			margin-bottom:10px !important;
+		}
+	}
+}
+
+@media(max-width:@responsive-breakpoint3){
+	.form-subscribe{
+		.yks-mailchimpFormDiv{
+			display:block;
+		}
+
+		.yks-mailchimpFormDivRow{
+			display:block;
+			width:100%;
+		}
+
+		.yks-mc-form-row-email-address{
+			width:100%;
+			margin:0;
+		}
+
+		input{
+			&[type="text"],
+			&[type="submit"]
+			{
+				width:100%;
+			}
+		}
+	}
+}

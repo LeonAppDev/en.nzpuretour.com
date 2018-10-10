@@ -1,0 +1,39 @@
+{
+  "name": "zeroxme/bootstrap-3-arabic",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "bootstrap",
+    "rtl"
+  ],
+  "homepage": "http://zerox.me/projects/bootstrap/",
+  "authors": [
+    {
+      "name": "Mark Otto",
+      "email": "markdotto@gmail.com"
+    },
+    {
+      "name": "Jacob Thornton",
+      "email": "jacobthornton@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/twbs/bootstrap/issues"
+  },
+  "license": "MIT",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.3.x-dev"
+    }
+  },
+  "replace": {
+    "twitter/bootstrap": "self.version"
+  }
+}

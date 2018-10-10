@@ -1,0 +1,30 @@
+.article-info{
+	display:block;
+	margin:0;
+
+	& > li{
+		display:inline-block;
+		.margin-right(15px);
+		color:@main-text-color;
+		font-family:@subheading-font-family;
+		font-size:1.067em;
+
+		&:last-child{
+			.margin-right(0);
+		}
+
+		a{
+			color:@main-text-color;
+			border-bottom:none;
+
+			&:hover{
+				.mix-title-hover();
+			}
+		}
+
+		i{
+			.margin-right(5px);
+			color:@main-color1;
+		}
+	}
+}

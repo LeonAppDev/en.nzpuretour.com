@@ -1,0 +1,40 @@
+.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern{
+	display:inline-block;
+	line-height:3.000em;
+	padding:0 2em;
+	border:none;
+	border-radius:@main-border-radius;
+	white-space:nowrap;
+	vertical-align:top;
+	text-transform:uppercase;
+	color:@main-color-white !important;
+	font-size:1em;
+	.mix-alternative-text();
+	background:fade(@main-color1, 80%) !important;
+
+	&:hover{
+		border:none;
+		background:@main-color1 !important;
+	}
+
+	&:focus,
+	&:active{
+		border:none;
+	}
+
+	&.vc_btn3-icon-left{
+		padding-left:50px !important;
+
+		.vc_btn3-icon{
+			left:30px !important;
+		}
+	}
+
+	&.vc_btn3-icon-right{
+		padding-right:50px !important;
+
+		.vc_btn3-icon{
+			right:30px !important;
+		}
+	}
+}

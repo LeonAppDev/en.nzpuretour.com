@@ -1,0 +1,210 @@
+.header{
+	color:@header-text-color;
+	background:@header-bg;
+
+	&__info{
+		overflow:hidden;
+		position:relative;
+
+		&:before{
+			content:" ";
+			display:block;
+			width:100%;
+			height:1px;
+			position:absolute;
+			bottom:0;
+			.left(0);
+			background:@header-text-color;
+			opacity:0.1;
+		}
+
+		&__items-left{
+			.float(left);
+		}
+
+		&__items-right{
+			.float(right);
+		}
+
+		&__item{
+			display:inline-block;
+			margin:5px 0;
+			.padding-left(1px);
+			font-size:0.933em;
+			line-height:35px;
+
+			&--delimiter{
+				position:relative;
+
+				& + &{
+					.padding-left(20px);
+
+					&:before{
+						content:" ";
+						display:block;
+						width:1px;
+						height:25px;
+						position:absolute;
+						top:5px;
+						.left(0);
+						background:@header-text-color;
+						opacity:0.1;
+					}
+				}
+			}
+
+			& + &{
+				.margin-left(20px);
+			}
+
+			&--phone{
+				opacity:@header__info-opacity;
+
+				i{
+					.margin-right(8px);
+				}
+			}
+
+			&--clock{
+				opacity:@header__info-opacity;
+
+				i{
+					.margin-right(8px);
+				}
+			}
+
+			&--social-icons{
+				a{
+					.margin-right(15px);
+
+					&:last-child{
+						.margin-right(0);
+					}
+				}
+			}
+
+			&--shoping-cart{
+				i{
+					.margin-right(5px);
+				}
+			}
+
+			a{
+				.padding-left(1px);
+				color:@header-text-color;
+				opacity:@header__info-opacity;
+
+				&:hover{
+					color:@header-text-color;
+					opacity:1;
+				}
+
+				&:focus,
+				&:active{
+					color:@header-text-color;
+					opacity:@header__info-opacity;
+				}
+			}
+		}
+	}
+
+	&__content{
+		min-height:@header__content-height;
+		line-height:@header__content-height;
+		position:relative;
+	}
+
+	&-wrap{
+		min-height:@header__content-height;
+
+		&__backlog{
+			display:none;
+		}
+
+		&--sticky-header{
+			.header-wrap{
+				&__backlog{
+					display:block;
+				}
+			}
+
+			.header{
+				width:100%;
+				position:fixed;
+				top:0;
+				.left(0);
+				z-index:100;
+
+				&__info{
+					display:none;
+				}
+
+				&__content{
+					min-height:0;
+					line-height:@header__content-height;
+				}
+			}
+		}
+	}
+}
+
+.admin-bar{
+	.header-wrap{
+		&--sticky-header{
+			.header{
+				top:32px;
+			}
+		}
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint2){
+	.header{
+		&__content{
+			text-align:center;
+		}
+
+		&__info{
+			&__items-left,
+			&__items-right
+			{
+				float:none;
+				text-align:center;
+			}
+		}
+	}
+}
+
+// wordpress change height for admin bar
+@media screen and (max-width:782px){
+	.admin-bar{
+		.header-wrap--sticky-header{
+			.header{
+				top:46px;
+			}
+		}
+	}
+}
+
+@media(max-width:@mobile-menu-breakpoint){
+	.header-wrap--sticky-header{
+		.header{
+			width:100%;
+			position:static;
+			top:auto;
+			.left(auto);
+			z-index:auto;
+
+			&__info{
+				display:block;
+			}
+		}
+
+		.header-wrap{
+			&__backlog{
+				display:none;
+			}
+		}
+	}
+}

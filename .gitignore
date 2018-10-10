@@ -1,0 +1,14 @@
+wp-includes
+wp-admin
+wp-snapshots
+.tmb
+wp-content/cache
+wp-content/uploads
+wp-content/languages
+wp-content/plugins
+wp-content/mu-plugins
+
+*.php
+license.txt
+readme.html
+.htaccess*

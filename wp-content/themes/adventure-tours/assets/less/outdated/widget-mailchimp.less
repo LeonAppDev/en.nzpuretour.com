@@ -1,0 +1,111 @@
+.widget_yikes_mc_widget{
+	.yks-mailchimpFormDivRowLabel{
+		display:none !important;
+	}
+
+	.yks-mailchimpFormDivRowField{
+		input{
+			height:45px;
+			padding:0 20px !important;
+			margin-bottom:10px;
+			background-color:rgba(255,255,255,0.9);
+			background:fade(@main-color-white, 90%);
+			.mix-transition(@main-animation-forms);
+
+			&:focus{
+				background:@main-color-white
+			}
+		}
+	}
+
+	& .yks-mailchimpFormDivRow,
+	& .yks-mailchimpFormDivSubmit,
+	& .yks-mailchimpFormDivSubmit p{
+		margin:0 !important;
+	}
+
+	.yikes-mailchimp-form-description{
+		margin:0 0 10px !important;
+		color:fade(@main-color-white, 90%);
+	}
+
+	& .yks-mailchimpFormDiv{
+		.yks-mc-input-field-row-email-address{
+			display:inline-block;
+		}
+	}
+
+	.ykfmc-submit{
+		height:45px;
+		line-height:45px;
+		padding:0 30px;
+		border:none;
+		color:@main-color-white;
+		text-transform:uppercase;
+		.mix-alternative-text();
+		background:fade(@main-color1, 80%);
+		.mix-transition();
+
+		&:hover{
+			background:fade(@main-color1, 100%);
+		}
+	}
+
+	.yks-status .yks-success{
+		color:fade(@main-color-white, 80%);
+		line-height:1.5em;
+		text-align:center;
+		margin:0;
+		padding:0;
+	}
+
+	.yks-mc-submit-preloader{
+		display:none;
+	}
+
+	#yks_form_error_message{
+		margin:0 0 10px;
+		padding:0;
+		color:@warning-color;
+		line-height:1.4em;
+		font-size:13px !important;
+
+		ul{
+			padding:0;
+			.margin(0, 0, 0, 15px);
+			list-style:initial;
+
+			li{
+				width:auto !important;
+				color:@warning-color !important;
+
+				&:before{
+					display:none;
+				}
+			}
+		}
+	}
+	
+	.yks-status{
+		.yks-success{
+			width:100%;
+			margin:0;
+
+			p{
+				margin:0 0 10px;
+			}
+		}
+	}
+}
+
+
+.sidebar{
+	.widget_yikes_mc_widget{
+		background-color:@header-bg;
+
+		.widget__title{
+			color:fade(@main-color-white, 90%);
+			border-bottom-color:fade(@main-color-white, 15%);
+		}
+	}
+}

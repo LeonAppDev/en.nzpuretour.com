@@ -1,0 +1,65 @@
+.atgrid--small{
+	.atgrid{
+		&__title{
+			font-size:1.467em;
+			.mix-alternative-text();
+			text-transform:none;
+		}
+
+		&__item{
+			box-shadow:@main-box-shadow;
+
+			&__angle{
+				font-size:0.733em;
+				top:15px;
+				.right(-70px);
+			}
+
+			&__content{
+				padding:20px;
+			}
+
+			&__title{
+				font-size:1.200em;
+			}
+
+			&__description{
+				font-size:0.933em;
+				line-height:1.643em;
+			}
+
+			&__info{
+				&__item{
+					padding:5px 10px;
+
+					i{
+						.margin-right(5px);
+					}
+				}
+			}
+
+			&__price{
+				&__button{
+					height:40px;
+					line-height:40px;
+				}
+			}
+
+			&__rating{
+				font-size:1.200em;
+			}
+
+			&__icons{
+				.left(20px);
+
+				a{
+					.margin-right(10px);
+				}
+
+				i{
+					font-size:1.333em;
+				}
+			}
+		}
+	}
+}

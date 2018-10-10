@@ -1,0 +1,22 @@
+.product-thumbnails{
+	&__item{
+		margin-top:30px;
+	}
+}
+
+.product-box{
+	.product-thumbnails{
+		&__item{
+			width:33.33333333%;
+		}
+	}
+}
+
+// Responsive
+@media(max-width:@responsive-breakpoint3){
+	.product-thumbnails{
+		&__item{
+			width:50% !important;
+		}
+	}
+}
