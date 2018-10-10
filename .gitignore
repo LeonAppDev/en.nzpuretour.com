@@ -7,6 +7,8 @@ wp-content/uploads
 wp-content/languages
 wp-content/plugins
 wp-content/mu-plugins
+wp-content/fv-flowplayer-custom
+wp-content/w3tc-config
 
 *.php
 license.txt
